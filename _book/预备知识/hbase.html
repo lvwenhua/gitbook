@@ -1,0 +1,841 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>hbase学习笔记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hdfs.html" />
+    
+    
+    <link rel="prev" href="spark.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    git笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    docker笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="flume.html">
+            
+                <a href="flume.html">
+            
+                    
+                    flume笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="spark.html">
+            
+                <a href="spark.html">
+            
+                    
+                    spark学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="hbase.html">
+            
+                <a href="hbase.html">
+            
+                    
+                    hbase学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="hdfs.html">
+            
+                <a href="hdfs.html">
+            
+                    
+                    hdfs学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="ambari.html">
+            
+                <a href="ambari.html">
+            
+                    
+                    Ambari学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="pyspark.html">
+            
+                <a href="pyspark.html">
+            
+                    
+                    pyspark学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="kafka.html">
+            
+                <a href="kafka.html">
+            
+                    
+                    kafka学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../代码练习/">
+            
+                <a href="../代码练习/">
+            
+                    
+                    代码练习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../代码练习/pyspark_demo.html">
+            
+                <a href="../代码练习/pyspark_demo.html">
+            
+                    
+                    pyspark实例练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../代码练习/scala_spark.html">
+            
+                <a href="../代码练习/scala_spark.html">
+            
+                    
+                    scala-spark实例练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >hbase学习笔记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hbase&#x5B66;&#x4E60;&#x7B14;&#x8BB0;">hbase&#x5B66;&#x4E60;&#x7B14;&#x8BB0;</h1>
+<h3 id="&#x7B2C;&#x4E00;&#x90E8;&#x5206;hbase&#x67B6;&#x6784;&#x3001;&#x8BFB;&#x5199;&#x539F;&#x7406;&#x53CA;&#x5237;&#x5199;&#x5408;&#x5E76;&#x5207;&#x5206;&#x673A;&#x5236;">&#x7B2C;&#x4E00;&#x90E8;&#x5206;.HBase&#x67B6;&#x6784;&#x3001;&#x8BFB;&#x5199;&#x539F;&#x7406;&#x53CA;&#x5237;&#x5199;&#x5408;&#x5E76;&#x5207;&#x5206;&#x673A;&#x5236;</h3>
+<h4 id="&#x4E00;&#x3001;hbase&#x7684;&#x7ED3;&#x6784;">&#x4E00;&#x3001;HBase&#x7684;&#x7ED3;&#x6784;</h4>
+<h5 id="&#xFF08;&#x4E00;&#xFF09;&#x903B;&#x8F91;&#x7ED3;&#x6784;">&#xFF08;&#x4E00;&#xFF09;&#x903B;&#x8F91;&#x7ED3;&#x6784;</h5>
+<p><img src="C:\Users\lv\AppData\Roaming\Typora\typora-user-images\1573003062207.png" alt="1573003062207"></p>
+<p>HBase&#x4EE5;&#x5217;&#x65CF;&#x4E3A;&#x7EB5;&#x5411;&#x5206;&#x9694;&#x5355;&#x4F4D;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#xFF0C;&#x6BCF;&#x4E2A;&#x5217;&#x65CF;&#x4E3A;&#x4E00;&#x4E2A;store&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x8868;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x82E5;&#x5E72;region&#x3002;</p>
+<p>Regin&#x4EE5;rowkey&#x7684;&#x5927;&#x5C0F;&#x8303;&#x56F4;&#x8FDB;&#x884C;&#x5206;&#x5272;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;region&#x90FD;&#x5305;&#x542B;&#x6240;&#x6709;&#x5217;&#x65CF;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>Rowkey&#x6709;&#x5E8F;&#xFF0C;&#x4EE5;&#x5B57;&#x5178;&#x5E8F;&#x8FDB;&#x884C;&#x6392;&#x5217;&#xFF0C;&#x975E;&#x7A7A;&#xFF0C;&#x4E0D;&#x91CD;&#x590D;&#xFF0C;&#x901A;&#x8FC7;Rowkey&#x83B7;&#x53D6;&#x7279;&#x5B9A;&#x6570;&#x636E;&#x3002;</p>
+<h5 id="&#xFF08;&#x4E8C;&#xFF09;&#x7269;&#x7406;&#x5B58;&#x50A8;&#x7ED3;&#x6784;">&#xFF08;&#x4E8C;&#xFF09;&#x7269;&#x7406;&#x5B58;&#x50A8;&#x7ED3;&#x6784;</h5>
+<p><img src="C:\Users\lv\AppData\Roaming\Typora\typora-user-images\1573003085462.png" alt="1573003085462"></p>
+<p>&#x6570;&#x636E;&#x6A21;&#x578B;&#xFF1A;</p>
+<p>1&#xFF09;Name Space&#xFF08;&#x5728;0.96&#x7248;&#x672C;&#x4EE5;&#x540E;&#x51FA;&#x73B0;&#xFF09;</p>
+<p>&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7684; DatabBase &#x6982;&#x5FF5;&#xFF0C;&#x6BCF;&#x4E2A;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x6709;&#x591A;&#x4E2A;&#x8868;&#x3002; HBase&#x6709;&#x4E24;&#x4E2A;&#x81EA;&#x5E26;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x5206;&#x522B;&#x662F; hbase &#x548C; default&#xFF0C; hbase &#x4E2D;&#x5B58;&#x653E;&#x7684;&#x662F; HBase &#x5185;&#x7F6E;&#x7684;&#x8868;&#xFF0C;&#x5982;meta&#x8868;&#xFF0C;default &#x8868;&#x662F;&#x7528;&#x6237;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>2&#xFF09; Region</p>
+<p>&#x7C7B;&#x4F3C;&#x4E8E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x6982;&#x5FF5;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C; HBase &#x5B9A;&#x4E49;&#x8868;&#x65F6;&#x53EA;&#x9700;&#x8981;&#x58F0;&#x660E;&#x5217;&#x65CF;&#x5373;&#x53EF;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x58F0;&#x660E;&#x5177;&#x4F53;&#x7684;&#x5217;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5F80; HBase &#x5199;&#x5165;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x3001;&#x6309;&#x9700;&#x6307;&#x5B9A;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x548C;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x76F8;&#x6BD4;&#xFF0C; HBase &#x80FD;&#x591F;&#x8F7B;&#x677E;&#x5E94;&#x5BF9;&#x5B57;&#x6BB5;&#x53D8;&#x66F4;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<p>3&#xFF09; Row</p>
+<p>HBase &#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x884C;&#x6570;&#x636E;&#x90FD;&#x7531;&#x4E00;&#x4E2A; RowKey &#x548C;&#x591A;&#x4E2A; Column&#xFF08;&#x5217;&#xFF09;&#x7EC4;&#x6210;&#xFF0C;&#x6570;&#x636E;&#x662F;&#x6309;&#x7167; RowKey&#x7684;&#x5B57;&#x5178;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x65F6;&#x53EA;&#x80FD;&#x6839;&#x636E; RowKey &#x8FDB;&#x884C;&#x68C0;&#x7D22;&#xFF0C;&#x6240;&#x4EE5; RowKey &#x7684;&#x8BBE;&#x8BA1;&#x5341;&#x5206;&#x91CD;&#x8981;&#x3002;</p>
+<p>4&#xFF09; Column</p>
+<p>HBase &#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5217;&#x90FD;&#x7531; Column Family(&#x5217;&#x65CF;)&#x548C; Column Qualifier&#xFF08;&#x5217;&#x9650;&#x5B9A;&#x7B26;&#xFF09; &#x8FDB;&#x884C;&#x9650;&#x5B9A;&#xFF0C;&#x4F8B;&#x5982; info&#xFF1A; name&#xFF0C; info&#xFF1A; age&#x3002;&#x5EFA;&#x8868;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x6307;&#x660E;&#x5217;&#x65CF;&#xFF0C;&#x800C;&#x5217;&#x9650;&#x5B9A;&#x7B26;&#x65E0;&#x9700;&#x9884;&#x5148;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>5&#xFF09; Time Stamp</p>
+<p>&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x6570;&#x636E;&#x7684;&#x4E0D;&#x540C;&#x7248;&#x672C;&#xFF08;version&#xFF09;&#xFF0C; &#x6BCF;&#x6761;&#x6570;&#x636E;&#x5199;&#x5165;&#x65F6;&#xFF0C; &#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x81EA;&#x52A8;&#x4E3A;&#x5176;&#x52A0;&#x4E0A;&#x8BE5;&#x5B57;&#x6BB5;&#xFF0C;&#x5176;&#x503C;&#x4E3A;&#x5199;&#x5165; HBase &#x7684;&#x65F6;&#x95F4;&#x3002;&#x5355;&#x5143;&#x683C;&#x5185;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x503C;&#x6309;&#x65F6;&#x95F4;&#x5012;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x6700;&#x65B0;&#x7684;&#x6570;&#x636E;&#x6392;&#x5728;&#x6700;&#x524D;&#x9762;&#x3002;</p>
+<p>6&#xFF09; Cell</p>
+<p>&#x7531;RowKey&#x3001;&#x5217;&#x65CF;&#x3001;&#x5217;&#x9650;&#x5B9A;&#x7B26;&#x3001;timestamp&#x552F;&#x4E00;&#x5B9A;&#x4F4D; &#xFF0C;Cell&#x4E2D;&#x5B58;&#x653E;&#x4E00;&#x4E2A;&#x503C;&#xFF08;Value&#xFF09;&#x548C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x53F7;&#x3002;</p>
+<p><strong>HBase&#x8868;&#x7279;&#x70B9;&#xFF1A;</strong></p>
+<ul>
+<li><p>&#x6570;&#x636E;&#x89C4;&#x6A21;&#x5927;&#xFF0C;&#x5355;&#x8868;&#x53EF;&#x5BB9;&#x7EB3;&#x6570;&#x5341;&#x4EBF;&#x884C;&#xFF0C;&#x4E0A;&#x767E;&#x4E07;&#x5217;&#x3002;</p>
+</li>
+<li><p>&#x65E0;&#x6A21;&#x5F0F;&#xFF0C;&#x4E0D;&#x50CF;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x6709;&#x4E25;&#x683C;&#x7684;Scheme&#xFF0C;&#x6BCF;&#x884C;&#x53EF;&#x4EE5;&#x6709;&#x4EFB;&#x610F;&#x591A;&#x7684;&#x5217;&#xFF0C;&#x5217;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x589E;&#x52A0;&#xFF0C;&#x4E0D;&#x540C;&#x884C;&#x53EF;&#x4EE5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5217;&#xFF0C;&#x5217;&#x7684;&#x7C7B;&#x578B;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x3002;</p>
+</li>
+<li><p>&#x7A00;&#x758F;&#xFF0C;&#x503C;&#x4E3A;&#x7A7A;&#x7684;&#x5217;&#x4E0D;&#x5360;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF0C;&#x8868;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x7A00;&#x758F;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x5B58;&#x50A8;&#x65F6;&#xFF0C;&#x80FD;&#x8FDB;&#x884C;&#x538B;&#x7F29;&#x3002;</p>
+</li>
+<li><p>&#x9762;&#x5411;&#x5217;&#x65CF;&#xFF0C;&#x9762;&#x5411;&#x5217;&#x65CF;&#x7684;&#x5B58;&#x50A8;&#x548C;&#x6743;&#x9650;&#x63A7;&#x5236;&#xFF0C;&#x652F;&#x6301;&#x5217;&#x65CF;&#x72EC;&#x7ACB;&#x67E5;&#x8BE2;&#x3002;</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x591A;&#x7248;&#x672C;&#xFF0C;&#x5229;&#x7528;&#x65F6;&#x95F4;&#x6233;&#x6765;&#x6807;&#x8BC6;&#x7248;&#x672C;</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x65E0;&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x6709;&#x6570;&#x636E;&#x4EE5;&#x5B57;&#x8282;&#x6570;&#x636E;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;</p>
+</li>
+</ul>
+<h4 id="&#x4E8C;&#x3001;hbase&#x7684;&#x67B6;&#x6784;">&#x4E8C;&#x3001;HBase&#x7684;&#x67B6;&#x6784;</h4>
+<p>   <img src="C:\Users\lv\AppData\Roaming\Typora\typora-user-images\1573003294840.png" alt="1573003294840"></p>
+<h5 id="&#x67B6;&#x6784;&#x89D2;&#x8272;&#xFF1A;">&#x67B6;&#x6784;&#x89D2;&#x8272;&#xFF1A;</h5>
+<p><strong>1</strong>&#xFF09;<strong>Region Server</strong></p>
+<p>Region Server &#x4E3A; Region &#x7684;&#x7BA1;&#x7406;&#x8005;&#xFF0C;&#x4E00;&#x4E2A;RegionServer&#x91CC;&#x6709;&#x591A;&#x4E2A;Region&#xFF0C;&#x4E00;&#x4E2A;RegionServer&#x7BA1;&#x7406;&#x7740;&#x591A;&#x4E2A;Region&#xFF0C;&#x5728;HBase&#x8FD0;&#x884C;&#x671F;&#x95F4;&#xFF0C;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;HRegionServer&#x3002;</p>
+<p>&#x5904;&#x7406;Client&#x7AEF;&#x7684;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;&#xFF08;&#x6839;&#x636E;&#x4ECE;HMaster&#x8FD4;&#x56DE;&#x7684;&#x5143;&#x6570;&#x636E;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;Region&#x6765;&#x8BFB;&#x5199;&#x6570;&#x636E;&#xFF09;&#x3002;</p>
+<p>RegionServer&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;HLog&#x3002; </p>
+<p>&#x7BA1;&#x7406;Region&#x7684;Split&#x5206;&#x88C2;&#x3001;StoreFile&#x7684;Compaction&#x5408;&#x5E76;&#x3002;</p>
+<p><strong>2</strong>&#xFF09;<strong>Master</strong></p>
+<p>&#x8D1F;&#x8D23;&#x7BA1;&#x7406;HBase&#x5143;&#x6570;&#x636E;&#xFF0C;&#x5373;&#x8868;&#x7684;&#x7ED3;&#x6784;&#x3001;&#x8868;&#x5B58;&#x50A8;&#x7684;Region&#x7B49;&#x5143;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x8D1F;&#x8D23;&#x8868;&#x7684;&#x521B;&#x5EFA;&#xFF0C;&#x5220;&#x9664;&#x548C;&#x4FEE;&#x6539;&#xFF08;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x4F1A;&#x5BFC;&#x81F4;HBase&#x5143;&#x6570;&#x636E;&#x7684;&#x53D8;&#x52A8;&#xFF09;&#x3002;</p>
+<p>&#x8D1F;&#x8D23;&#x4E3A;HRegionServer&#x5206;&#x914D;Region&#xFF0C;&#x5206;&#x914D;&#x597D;&#x540E;&#x4E5F;&#x4F1A;&#x5C06;&#x5143;&#x6570;&#x636E;&#x5199;&#x5165;&#x76F8;&#x5E94;&#x4F4D;&#x7F6E;&#xFF0C;&#x540C;&#x65F6;&#x8D1F;&#x8D23;&#x76D1;&#x63A7;&#x6BCF;&#x4E2A; RegionServer&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x548C;&#x6545;&#x969C;&#x8F6C;&#x79FB;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5BF9;&#x53EF;&#x7528;&#x6027;&#x8981;&#x6C42;&#x8F83;&#x9AD8;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x505A;HA&#x9AD8;&#x53EF;&#x7528;&#xFF08;&#x901A;&#x8FC7;Zookeeper&#xFF09;&#x3002;&#x4F46;&#x662F;HMaster&#x4E0D;&#x4F1A;&#x53BB;&#x5904;&#x7406;Client&#x7AEF;&#x7684;&#x6570;&#x636E;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x4F1A;&#x52A0;&#x5927;&#x5176;&#x8D1F;&#x8F7D;&#x538B;&#x529B;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;&#x5B83;&#x4F1A;&#x4EA4;&#x7ED9;HRegionServer&#x6765;&#x505A;&#x3002;</p>
+<p><strong>3</strong>&#xFF09;<strong>Zookeeper</strong></p>
+<p>HBase &#x901A;&#x8FC7; Zookeeper &#x6765;&#x505A; Master &#x7684;&#x9AD8;&#x53EF;&#x7528;&#x3001; RegionServer &#x7684;&#x76D1;&#x63A7;&#x3001;&#x5143;&#x6570;&#x636E;&#x7684;&#x5165;&#x53E3;&#x4EE5;&#x53CA;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x7684;&#x7EF4;&#x62A4;&#x7B49;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p><strong>4</strong>&#xFF09;<strong>HDFS</strong></p>
+<p>HDFS &#x4E3A; HBase &#x63D0;&#x4F9B;&#x6700;&#x7EC8;&#x7684;&#x5E95;&#x5C42;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#xFF0C;&#x540C;&#x65F6;&#x4E3A; HBase &#x63D0;&#x4F9B;&#x9AD8;&#x53EF;&#x7528;&#x7684;&#x652F;&#x6301;&#x3002;</p>
+<h5 id="regionserver&#x5185;&#x90E8;&#x7ED3;&#x6784;&#xFF1A;">RegionServer&#x5185;&#x90E8;&#x7ED3;&#x6784;&#xFF1A;</h5>
+<p><strong>1</strong>&#xFF09;<strong>HRegion</strong> </p>
+<p>&#x200B;        &#x4E00;&#x4E2A;HRegion&#x91CC;&#x53EF;&#x80FD;&#x6709;1&#x4E2A;&#x6216;&#x591A;&#x4E2A;Store&#x3002; </p>
+<p>HRegion&#x662F;&#x5206;&#x5E03;&#x5F0F;&#x5B58;&#x50A8;&#x548C;&#x8D1F;&#x8F7D;&#x7684;&#x6700;&#x5C0F;&#x5355;&#x5143;&#x3002; </p>
+<p>&#x4E00;&#x5F20;&#x8868;&#x901A;&#x5E38;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x591A;&#x4E2A;HRegionServer&#x7684;&#x591A;&#x4E2A;Region&#x4E2D;&#x3002; </p>
+<p>&#x56E0;&#x4E3A;HBase&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6D77;&#x91CF;&#x6570;&#x636E;&#xFF0C;&#x6545;&#x4E00;&#x5F20;&#x8868;&#x4E2D;&#x6570;&#x636E;&#x91CF;&#x975E;&#x5E38;&#x4E4B;&#x5927;&#xFF0C;&#x5355;&#x673A;&#x4E00;&#x822C;&#x5B58;&#x4E0D;&#x4E0B;&#x8FD9;&#x4E48;&#x5927;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6545;HBase &#x4F1A;&#x5C06;&#x4E00;&#x5F20;&#x8868;&#x6309;&#x7167;RowKey&#x8303;&#x56F4;&#x5C06;&#x5927;&#x8868;&#x5212;&#x5206;&#x4E3A;&#x591A;&#x4E2A;Region&#xFF0C;&#x6BCF;&#x4E2A;Region&#x4FDD;&#x5B58;&#x8868;&#x7684;&#x4E00;&#x6BB5;&#x8FDE;&#x7EED;&#x6570;&#x636E;&#x3002;&#x521D;&#x59CB;&#x53EA;&#x6709;1&#x4E2A; Region&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;Region&#x589E;&#x5927;&#x5230;&#x67D0;&#x4E2A;&#x9608;&#x503C;&#x540E;&#xFF0C;&#x4FBF;&#x5206;&#x5272;&#x4E3A;&#x4E24;&#x4E2A;&#x3002;</p>
+<p><strong>2</strong>&#xFF09;<strong>Store</strong></p>
+<p>Store&#x662F;&#x5B58;&#x50A8;&#x843D;&#x76D8;&#x7684;&#x6700;&#x5C0F;&#x5355;&#x5143;&#xFF0C;&#x7531;&#x5185;&#x5B58;&#x4E2D;&#x7684;MemStore&#x548C;&#x78C1;&#x76D8;&#x4E2D;&#x7684;&#x82E5;&#x5E72;StoreFile&#x7EC4;&#x6210;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;Store&#x91CC;&#x6709;1&#x4E2A;&#x6216;&#x591A;&#x4E2A;StoreFile&#x548C;&#x4E00;&#x4E2A;memStore&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;Store&#x5B58;&#x50A8;&#x4E00;&#x4E2A;&#x5217;&#x65CF;&#x3002;</p>
+<p><strong>3</strong>&#xFF09;<strong>MemStore</strong></p>
+<p>&#x5199;&#x7F13;&#x5B58;&#xFF0C;&#x7531;&#x4E8E; HFile &#x4E2D;&#x7684;&#x6570;&#x636E;&#x8981;&#x6C42;&#x662F;&#x6709;&#x5E8F;&#x7684;&#xFF0C; &#x6240;&#x4EE5;&#x6570;&#x636E;&#x662F;&#x5148;&#x5B58;&#x50A8;&#x5728; MemStore &#x4E2D;&#xFF0C;&#x6392;&#x597D;&#x5E8F;&#x540E;&#xFF0C;&#x7B49;&#x5230;&#x8FBE;&#x5237;&#x5199;&#x65F6;&#x673A;&#x624D;&#x4F1A;&#x5237;&#x5199;&#x5230; HFile&#xFF0C;&#x6BCF;&#x6B21;&#x5237;&#x5199;&#x90FD;&#x4F1A;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684; HFile&#x3002;</p>
+<p><strong>4</strong>&#xFF09;<strong>StoreFile</strong></p>
+<p>&#x4FDD;&#x5B58;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x7684;&#x7269;&#x7406;&#x6587;&#x4EF6;&#xFF0C; StoreFile &#x4EE5; HFile &#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x5728; HDFS &#x4E0A;&#x3002;</p>
+<p><strong>5</strong>&#xFF09;<strong>WAL&#xFF08;HLog&#xFF09;</strong></p>
+<p>&#x7531;&#x4E8E;&#x6570;&#x636E;&#x8981;&#x7ECF; MemStore &#x6392;&#x5E8F;&#x540E;&#x624D;&#x80FD;&#x5237;&#x5199;&#x5230; HFile&#xFF0C; &#x4F46;&#x628A;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x4F1A;&#x6709;&#x5F88;&#x9AD8;&#x7684;&#x6982;&#x7387;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x4E22;&#x5931;&#xFF0C;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6570;&#x636E;&#x4F1A;&#x5148;&#x5199;&#x5728;&#x4E00;&#x4E2A;&#x53EB;&#x505A; Write-Ahead logfile &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5199;&#x5165; MemStore &#x4E2D;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x6545;&#x969C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x91CD;&#x5EFA;&#x3002;</p>
+<h4 id="&#x4E09;&#x3001;hbase&#x8BFB;&#x5199;&#x6570;&#x636E;&#x6D41;&#x7A0B;">&#x4E09;&#x3001;HBase&#x8BFB;&#x5199;&#x6570;&#x636E;&#x6D41;&#x7A0B;</h4>
+<h5 id="1&#x5199;&#x8FC7;&#x7A0B;">1.&#x5199;&#x8FC7;&#x7A0B;</h5>
+<p>   <img src="C:\Users\lv\AppData\Roaming\Typora\typora-user-images\1573003431862.png" alt="1573003431862"></p>
+<p>1&#xFF09; Client &#x5148;&#x8BBF;&#x95EE; zookeeper&#xFF0C;&#x83B7;&#x53D6; hbase:meta &#x8868;&#x4F4D;&#x4E8E;&#x54EA;&#x4E2A; Region Server&#x4E2D;&#xFF0C;&#x5E76;&#x5C06;&#x8BE5;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x5199;&#x5165;Client Cache&#x3002;</p>
+<p>&#xFF08;&#x8BE6;&#x7EC6;&#x5B9A;&#x4F4D;region&#x8FC7;&#x7A0B;&#x53C2;&#x8003;&#x6587;&#x4EF6;&#x201C;hbase~&#x67E5;&#x627E;region&#x95EE;&#x9898;&#x201D;&#xFF09;</p>
+<p>&#xFF08;&#x6CE8;&#xFF1A;&#x4E3A;&#x4E86;&#x52A0;&#x5FEB;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#xFF0C;&#x5C06;&#x5143;&#x6570;&#x636E;&#x3001;Region&#x4F4D;&#x7F6E;&#x7B49;&#x4FE1;&#x606F;&#x7F13;&#x5B58;&#x5728;Client Cache&#x4E2D;&#x3002;&#xFF09;</p>
+<p>2&#xFF09;&#x8BBF;&#x95EE;&#x5BF9;&#x5E94;&#x7684; Region Server&#xFF0C;&#x83B7;&#x53D6;hbase:meta &#x8868;&#xFF0C;&#x6839;&#x636E;&#x5199;&#x8BF7;&#x6C42;&#x7684;</p>
+<p>namespace:table/rowkey&#xFF0C;&#x67E5;&#x8BE2;&#x51FA;&#x76EE;&#x6807;&#x6570;&#x636E;&#x4F4D;&#x4E8E;&#x54EA;&#x4E2A; Region Server &#x4E2D;&#x7684;&#x54EA;&#x4E2A; Region &#x4E2D;&#x3002;&#x5E76;&#x5C06;&#x8BE5; table &#x7684; region &#x4FE1;&#x606F;&#x7F13;&#x5B58;&#x5728;Client cache&#xFF0C;&#x65B9;&#x4FBF;&#x4E0B;&#x6B21;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>3&#xFF09;&#x4E0E;&#x76EE;&#x6807; Region Server &#x8FDB;&#x884C;&#x901A;&#x8BAF;&#xFF1B;</p>
+<p>4&#xFF09; HRegionServer&#x5148;&#x5C06;&#x64CD;&#x4F5C;&#x548C;&#x6570;&#x636E;&#x5199;&#x5165;HLog&#xFF08;&#x9884;&#x5199;&#x65E5;&#x5FD7;&#xFF0C;Write Ahead Log&#xFF0C;WAL&#xFF09;&#xFF0C;&#x518D;&#x5C06;&#x6570;&#x636E;&#x5199;&#x5165;MemStore&#xFF0C;&#x5E76;&#x4FDD;&#x6301;&#x6709;&#x5E8F;&#x3002;</p>
+<p>5&#xFF09;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001; ack&#xFF1B;</p>
+<p>6&#xFF09;&#x5F53;MemStore&#x7684;&#x6570;&#x636E;&#x91CF;&#x8D85;&#x8FC7;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x5237;&#x5199;&#x5230;&#x78C1;&#x76D8;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;StoreFile&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x5F53;Store&#x4E2D;StoreFile&#x7684;&#x6570;&#x91CF;&#x8D85;&#x8FC7;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x5C06;&#x82E5;&#x5E72;&#x5C0F;StoreFile&#x5408;&#x5E76;&#xFF08;Compact&#xFF09;&#x4E3A;&#x4E00;&#x4E2A;&#x5927;StoreFile&#x3002; </p>
+<p>&#x200B;        &#x5F53;Region&#x4E2D;&#x6700;&#x5927;Store&#x7684;&#x5927;&#x5C0F;&#x8D85;&#x8FC7;&#x9608;&#x503C;&#x65F6;&#xFF0C;Region&#x5206;&#x88C2;&#xFF08;Split&#xFF09;&#xFF0C;&#x7B49;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x5B50;Region&#x3002;</p>
+<h5 id="2&#x8BFB;&#x8FC7;&#x7A0B;">2.&#x8BFB;&#x8FC7;&#x7A0B;</h5>
+<p>   <img src="C:\Users\lv\AppData\Roaming\Typora\typora-user-images\1573003464698.png" alt="1573003464698"></p>
+<p>1&#xFF09; Client &#x5148;&#x8BBF;&#x95EE; zookeeper&#xFF0C;&#x83B7;&#x53D6; hbase:meta &#x8868;&#x4F4D;&#x4E8E;&#x54EA;&#x4E2A;Region Server&#x4E2D;&#xFF0C;&#x5E76;&#x5C06;&#x8BE5;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x5199;&#x5165;Client Cache&#x3002;</p>
+<p>&#xFF08;&#x5177;&#x4F53;&#x5B9A;&#x4F4D;region&#x8FC7;&#x7A0B;&#x53C2;&#x8003;&#x6587;&#x4EF6;&#x201C;hbase~&#x67E5;&#x627E;region&#x95EE;&#x9898;&#x201D;&#xFF09;</p>
+<p>&#xFF08;&#x6CE8;&#xFF1A;&#x4E3A;&#x4E86;&#x52A0;&#x5FEB;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#xFF0C;&#x5C06;&#x5143;&#x6570;&#x636E;&#x3001;Region&#x4F4D;&#x7F6E;&#x7B49;&#x4FE1;&#x606F;&#x7F13;&#x5B58;&#x5728;Client Cache&#x4E2D;&#x3002;&#xFF09;</p>
+<p>2&#xFF09;&#x8BBF;&#x95EE;&#x5BF9;&#x5E94;&#x7684; Region Server&#xFF0C;&#x83B7;&#x53D6;hbase:meta &#x8868;&#xFF0C;&#x6839;&#x636E;&#x8BFB;&#x8BF7;&#x6C42;&#x7684;</p>
+<p>namespace:table/rowkey&#xFF0C;&#x67E5;&#x8BE2;&#x51FA;&#x76EE;&#x6807;&#x6570;&#x636E;&#x4F4D;&#x4E8E;&#x54EA;&#x4E2A;Regi on Server&#x4E2D;&#x7684;&#x54EA;&#x4E2A;Region&#x4E2D;&#x3002;&#x5E76;&#x5C06;&#x8BE5; table&#x7684;region&#x4FE1;&#x606F;&#x7F13;&#x5B58;&#x5728;Client cache&#xFF0C;&#x65B9;&#x4FBF;&#x4E0B;&#x6B21;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>3&#xFF09;&#x4E0E;&#x76EE;&#x6807; Region Server &#x8FDB;&#x884C;&#x901A;&#x8BAF;&#xFF1B;</p>
+<p>4&#xFF09;HRegionServer&#x5148;&#x4ECE;MemStore&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x672A;&#x627E;&#x5230;&#xFF0C;&#x5728;&#x68C0;&#x67E5;blockcache&#x770B;&#x662F;&#x5426;&#x5305;&#x542B;&#x8BE5;&#x884C;&#x7684;block&#x662F;&#x5426;&#x6700;&#x8FD1;&#x88AB;&#x8BBF;&#x95EE;&#x8FC7;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x4ECE;StoreFile&#x4E2D;&#x8BFB;&#x53D6;&#x3002;&#x6B64;&#x5904;&#x6240;&#x6709;&#x6570;&#x636E;&#x662F;&#x6307;&#x540C;&#x4E00;&#x6761;&#x6570;&#x636E;&#x7684;&#x4E0D;&#x540C;&#x7248;&#x672C;&#xFF08;time stamp&#xFF09;&#x6216;&#x8005;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF08;Put/Delete&#xFF09;&#x3002;</p>
+<p>5&#xFF09;&#x5C06;&#x4ECE;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x4E2D;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x6570;&#x636E;&#x5757;&#xFF08;Block&#xFF0C; HFile &#x6570;&#x636E;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF0C;&#x9ED8;&#x8BA4;&#x5927;&#x5C0F;&#x4E3A; 64KB&#xFF09;&#x7F13;&#x5B58;&#x5230;Block Cache&#x3002;</p>
+<p>6&#xFF09;&#x5C06;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x540E;&#x8FD4;&#x56DE;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<h4 id="&#x56DB;&#x3001;hbase&#x5BF9;region&#x7684;&#x62C6;&#x5206;&#x4EE5;&#x53CA;&#x5BF9;storefile&#x7684;&#x5408;&#x5E76;">&#x56DB;&#x3001;HBase&#x5BF9;Region&#x7684;&#x62C6;&#x5206;&#x4EE5;&#x53CA;&#x5BF9;StoreFile&#x7684;&#x5408;&#x5E76;</h4>
+<h5 id="1&#x5BF9;region&#x7684;&#x62C6;&#x5206;">1.&#x5BF9;region&#x7684;&#x62C6;&#x5206;</h5>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x4E2A; Table &#x8D77;&#x521D;&#x53EA;&#x6709;&#x4E00;&#x4E2A; Region&#xFF0C;&#x968F;&#x7740;&#x6570;&#x636E;&#x7684;&#x4E0D;&#x65AD;&#x5199;&#x5165;&#xFF0C; Region &#x4F1A;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#x3002;&#x521A;&#x62C6;&#x5206;&#x65F6;&#xFF0C;&#x4E24;&#x4E2A;&#x5B50; Region &#x90FD;&#x4F4D;&#x4E8E;&#x5F53;&#x524D;&#x7684;Region Server&#xFF0C;&#x4F46;&#x5904;&#x4E8E;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7684;&#x8003;&#x8651;&#xFF0C;HMaster &#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5C06;&#x67D0;&#x4E2A; Region &#x8F6C;&#x79FB;&#x7ED9;&#x5176;&#x4ED6;&#x7684; Region Server&#x3002;</p>
+<p>Region Split &#x65F6;&#x673A;&#xFF1A;</p>
+<ul>
+<li><p>&#x5F53;1&#x4E2A; region&#x4E2D;&#x7684;&#x67D0;&#x4E2A; Store&#x4E0B;&#x6240;&#x6709; StoreFile&#x7684;&#x603B;&#x5927;&#x5C0F;&#x8D85;&#x8FC7;hbase.hregion.max.filesize&#xFF0C;&#x8BE5; Region &#x5C31;&#x4F1A;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#xFF08;0.94 &#x7248;&#x672C;&#x4E4B;&#x524D;&#xFF09;&#x3002;</p>
+</li>
+<li><p>&#x5F53;1&#x4E2A;region&#x4E2D;&#x7684;&#x67D0;&#x4E2A;Store&#x4E0B;&#x6240;&#x6709;StoreFile&#x7684;&#x603B;&#x5927;&#x5C0F;&#x8D85;&#x8FC7;Min(R^2 * &quot;hbase.hregion.memstore.flush.size&quot;,hbase.hregion.max.filesize)&#xFF0C;&#x8BE5; Region &#x5C31;&#x4F1A;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#xFF0C;&#x5176;&#x4E2D;R&#x4E3A;&#x5F53;&#x524D;RegionServer&#x4E2D;&#x5C5E;&#x4E8E;&#x8BE5;Table&#x7684;&#x4E2A;&#x6570;&#xFF08;0.94 &#x7248;&#x672C;&#x4E4B;&#x540E;&#xFF09;&#x3002;</p>
+</li>
+</ul>
+<h5 id="2&#x5BF9;storefile&#x7684;&#x5408;&#x5E76;">2.&#x5BF9;StoreFile&#x7684;&#x5408;&#x5E76;</h5>
+<p>&#x7531;&#x4E8E; memstore&#x6BCF;&#x6B21;&#x5237;&#x5199;&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684; HFile&#xFF0C;&#x4E14;&#x540C;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x4E0D;&#x540C;&#x7248;&#x672C;&#xFF08;timestamp&#xFF09;&#x548C;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#xFF08;Put/Delete&#xFF09;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684; HFile &#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#x67E5;&#x8BE2;&#x65F6;&#x9700;&#x8981;&#x904D;&#x5386;&#x6240;&#x6709;&#x7684; HFile&#x3002;&#x4E3A;&#x4E86;&#x51CF;&#x5C11; HFile &#x7684;&#x4E2A;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;&#x6E05;&#x7406;&#x6389;&#x8FC7;&#x671F;&#x548C;&#x5220;&#x9664;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F1A;&#x8FDB;&#x884C; StoreFile Compaction&#xFF0C;&#x4EE5;&#x4FBF;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x6548;&#x7387;&#x3002;</p>
+<p>   <img src="C:\Users\lv\AppData\Roaming\Typora\typora-user-images\1573003555652.png" alt="1573003555652"></p>
+<p>Compaction&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ul>
+<li>major compaction </li>
+</ul>
+<p>&#x200B;        &#x5C06;Store&#x4E0B;&#x9762;<strong>&#x6240;&#x6709;</strong>StoreFile&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;StoreFile&#xFF0C;&#x6B64;&#x64CD;&#x4F5C;&#x4F1A;&#x5220;&#x9664;&#x8FC7;&#x671F;&#x548C;&#x5220;&#x9664;&#x7684;&#x6570;&#x636E;</p>
+<ul>
+<li>minor compaction </li>
+</ul>
+<p>&#x200B;        &#x9009;&#x53D6;Store&#x4E0B;&#x7684;<strong>&#x90E8;&#x5206;</strong>StoreFile&#xFF0C;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;StoreFile&#xFF0C;&#x6B64;&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x6E05;&#x7406;&#x8FC7;&#x671F;&#x548C;&#x5220;&#x9664;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5408;&#x5E76;&#x7684;&#x89E6;&#x53D1;&#x65F6;&#x673A;&#xFF1A;</p>
+<p><strong>&#x53C2;&#x8003;url&#xFF1A;<a href="https://www.jianshu.com/p/b2d8a8c157d8" target="_blank">https://www.jianshu.com/p/b2d8a8c157d8</a> </strong></p>
+<p>&#x200B;    HBase&#x4E2D;&#x53EF;&#x4EE5;&#x89E6;&#x53D1;compaction&#x7684;&#x56E0;&#x7D20;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x56E0;&#x7D20;&#x6709;&#x8FD9;&#x4E48;&#x4E09;&#x79CD;&#xFF1A;Memstore Flush&#x3001;&#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#x5468;&#x671F;&#x6027;&#x68C0;&#x67E5;&#x3001;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#x3002;</p>
+<ul>
+<li><strong>Memstore Flush: </strong></li>
+</ul>
+<p>&#x5E94;&#x8BE5;&#x8BF4;compaction&#x64CD;&#x4F5C;&#x7684;&#x6E90;&#x5934;&#x5C31;&#x6765;&#x81EA;flush&#x64CD;&#x4F5C;&#xFF0C;memstore flush&#x4F1A;&#x4EA7;&#x751F;HFile&#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x5C31;&#x9700;&#x8981;compact&#x3002;&#x56E0;&#x6B64;&#x5728;&#x6BCF;&#x6B21;&#x6267;&#x884C;&#x5B8C;Flush&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#xFF0C;&#x90FD;&#x4F1A;&#x5BF9;&#x5F53;&#x524D;Store&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x6570;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x4E00;&#x65E6;&#x6587;&#x4EF6;&#x6570; &gt; &#x9884;&#x503C; &#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;compaction&#x3002;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;&#xFF0C;compaction&#x90FD;&#x662F;&#x4EE5;Store&#x4E3A;&#x5355;&#x4F4D;&#x8FDB;&#x884C;&#x7684;&#xFF0C;&#x800C;&#x5728;Flush&#x89E6;&#x53D1;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x6574;&#x4E2A;Region&#x7684;&#x6240;&#x6709;Store&#x90FD;&#x4F1A;&#x6267;&#x884C;compact&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x5728;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x6267;&#x884C;&#x591A;&#x6B21;compaction&#x3002;</p>
+<ul>
+<li><strong>&#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#x5468;&#x671F;&#x6027;&#x68C0;&#x67E5;&#xFF1A;</strong></li>
+</ul>
+<p>&#x540E;&#x53F0;&#x7EBF;&#x7A0B;CompactionChecker&#x5B9A;&#x671F;&#x89E6;&#x53D1;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x9700;&#x8981;&#x6267;&#x884C;compaction&#xFF0C;&#x68C0;&#x67E5;&#x5468;&#x671F;&#x4E3A;&#xFF1A;hbase.server.thread.wakefrequencyhbase.server.compactchecker.interval.multiplier&#x3002;&#x548C;Memstore flush&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x8BE5;&#x7EBF;&#x7A0B;&#x4F18;&#x5148;&#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x6570;&#xFF03;&#x662F;&#x5426;&#x5927;&#x4E8E;&#xFF0C;&#x4E00;&#x65E6;&#x5927;&#x4E8E;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;compaction&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x5B83;&#x4F1A;&#x63A5;&#x7740;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x6EE1;&#x8DB3;major compaction&#x6761;&#x4EF6;&#xFF0C;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;store&#x4E2D;hfile&#x7684;&#x6700;&#x65E9;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#x65E9;&#x4E8E;&#x67D0;&#x4E2A;&#x503C;mcTime&#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;major compaction&#xFF0C;HBase&#x9884;&#x60F3;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x673A;&#x5236;&#x5B9A;&#x671F;&#x5220;&#x9664;&#x8FC7;&#x671F;&#x6570;&#x636E;&#x3002;&#x4E0A;&#x6587;mcTime&#x662F;&#x4E00;&#x4E2A;&#x6D6E;&#x52A8;&#x503C;&#xFF0C;&#x6D6E;&#x52A8;&#x533A;&#x95F4;&#x9ED8;&#x8BA4;&#x4E3A;&#xFF3B;7-70.2&#xFF0C;7+7*0.2&#xFF3D;&#xFF0C;&#x5176;&#x4E2D;7&#x4E3A;hbase.hregion.majorcompaction&#xFF0C;0.2&#x4E3A;hbase.hregion.majorcompaction.jitter&#xFF0C;&#x53EF;&#x89C1;&#x9ED8;&#x8BA4;&#x5728;7&#x5929;&#x5DE6;&#x53F3;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;major compaction&#x3002;&#x7528;&#x6237;&#x5982;&#x679C;&#x60F3;&#x7981;&#x7528;major compaction&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x53C2;&#x6570;hbase.hregion.majorcompaction&#x8BBE;&#x4E3A;0&#x3002;</p>
+<ul>
+<li><strong>&#x624B;&#x52A8;&#x89E6;&#x53D1;&#xFF1A;</strong></li>
+</ul>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BB2;&#xFF0C;&#x624B;&#x52A8;&#x89E6;&#x53D1;compaction&#x901A;&#x5E38;&#x662F;&#x4E3A;&#x4E86;&#x6267;&#x884C;major compaction&#xFF0C;&#x539F;&#x56E0;&#x6709;&#x4E09;&#xFF0C;&#x5176;&#x4E00;&#x662F;&#x56E0;&#x4E3A;&#x5F88;&#x591A;&#x4E1A;&#x52A1;&#x62C5;&#x5FC3;&#x81EA;&#x52A8;major compaction&#x5F71;&#x54CD;&#x8BFB;&#x5199;&#x6027;&#x80FD;&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x9009;&#x62E9;&#x4F4E;&#x5CF0;&#x671F;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#xFF1B;&#x5176;&#x4E8C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x7528;&#x6237;&#x5728;&#x6267;&#x884C;&#x5B8C;alter&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x5E0C;&#x671B;&#x7ACB;&#x523B;&#x751F;&#x6548;&#xFF0C;&#x6267;&#x884C;&#x624B;&#x52A8;&#x89E6;&#x53D1;major compaction&#xFF1B;&#x5176;&#x4E09;&#x662F;HBase&#x7BA1;&#x7406;&#x5458;&#x53D1;&#x73B0;&#x786C;&#x76D8;&#x5BB9;&#x91CF;&#x4E0D;&#x591F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x624B;&#x52A8;&#x89E6;&#x53D1;major compaction&#x5220;&#x9664;&#x5927;&#x91CF;&#x8FC7;&#x671F;&#x6570;&#x636E;&#xFF1B;&#x65E0;&#x8BBA;&#x54EA;&#x79CD;&#x89E6;&#x53D1;&#x52A8;&#x673A;&#xFF0C;&#x4E00;&#x65E6;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#xFF0C;HBase&#x4F1A;&#x4E0D;&#x505A;&#x5F88;&#x591A;&#x81EA;&#x52A8;&#x5316;&#x68C0;&#x67E5;&#xFF0C;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x5408;&#x5E76;&#x3002;</p>
+<h4 id="&#x4E94;&#x3001;memstore&#x5237;&#x5199;&#x65F6;&#x673A;">&#x4E94;&#x3001;Memstore&#x5237;&#x5199;&#x65F6;&#x673A;</h4>
+<p><strong><em>&#x53C2;&#x8003;&#x535A;&#x5BA2;url&#xFF1A;<a href="https://blog.csdn.net/shenshouniu/article/details/84592496" target="_blank">https://blog.csdn.net/shenshouniu/article/details/84592496</a></em></strong></p>
+<p><strong>1. Memstore&#x7684;&#x4F5C;&#x7528;</strong></p>
+<p>&#x4E00;&#x4E2A;Store&#x4E2D;&#x603B;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;Memstore&#x548C;&#x591A;&#x4E2A;HFile&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x5237;&#x5199;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;HFile&#x3002;</p>
+<p>MemStore&#x7684;&#x5B9E;&#x73B0;&#x76EE;&#x7684;&#x4E0D;&#x662F;&#x52A0;&#x901F;&#x6570;&#x636E;&#x7684;&#x5199;&#x5165;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x7EF4;&#x6301;HBase&#x4E2D;&#x7684;&#x6570;&#x636E;&#x6309;&#x7167;rowkey&#x987A;&#x5E8F;&#x6765;&#x5B58;&#x50A8;&#xFF0C;&#x6240;&#x4EE5;&#x5148;&#x4F7F;&#x7528;MemStore&#x5148;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6574;&#x7406;&#x6392;&#x5E8F;&#x540E;&#x518D;&#x6301;&#x4E45;&#x5316;&#x5230;HDFS&#x3002;</p>
+<p><strong>2. Memstore&#x5237;&#x5199;&#x65F6;&#x673A;</strong></p>
+<p>&#xFF08;1&#xFF09;&#x6570;&#x636E;&#x5237;&#x5199;&#x65F6;&#x673A;&#x4E00;&#xFF08;<code>hbase.hregion.memstore.flush.size</code>&#xFF09;</p>
+<p>&#x5F53;Memstore&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x8FBE;&#x5230;<code>hbase.hregion.memstore.flush.size</code>&#x7684;&#x914D;&#x7F6E;&#x503C;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x5237;&#x5199;&#xFF0C;&#x751F;&#x4EA7;&#x4E00;&#x4E2A;HFile&#x3002;</p>
+<p><strong>&#x56E0;&#x4E3A;MemStore&#x7684;&#x5237;&#x5199;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x5B9A;&#x671F;&#x68C0;&#x67E5;&#x65F6;&#x95F4;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x53EF;&#x80FD;&#x6570;&#x636E;&#x589E;&#x957F;&#x901F;&#x5EA6;&#x592A;&#x5FEB;&#xFF0C;&#x5728;&#x8FD8;&#x672A;&#x8FBE;&#x5230;&#x68C0;&#x67E5;&#x65F6;&#x95F4;&#x4E4B;&#x524D;&#xFF0C;&#x6570;&#x636E;&#x5C31;&#x8FBE;&#x5230;&#x4E86;hbase.hregion.memstore.flush.size&#x7684;&#x597D;&#x51E0;&#x500D;&#xFF0C;&#x4ECE;&#x800C;&#x88AB;&#x963B;&#x585E;&#x4F4F;&#x4E86;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5728;&#x4E0B;&#x9762;&#x8BA8;&#x8BBA;&#x3002;</strong></p>
+<p>&#xFF08;2&#xFF09;&#x6570;&#x636E;&#x5237;&#x5199;&#x65F6;&#x673A;&#x4E8C; &#xFF08;globalMemStoreSize&#xFF09;</p>
+<p><code>globalMemStoreLimitLowMarkPercent</code>:&#x5168;&#x5C40;&#x7684;memstore&#x5237;&#x5199;&#x4E0B;&#x9650;&#xFF0C;&#x8FC7;&#x53BB;&#x901A;&#x8FC7;&#x914D;&#x7F6E;<code>hbase.regionserver.global.memstore.lowerLimit</code>&#x6765;&#x5B9A;&#x4E49;&#xFF0C;&#x73B0;&#x5728;&#x7EDF;&#x4E00;&#x6539;&#x6210;&#xFF1A;<code>hbase.regionserver.global.memstore.size.lower.limit</code>&#x3002;&#x8BE5;&#x914D;&#x7F6E;&#x9879;&#x662F;&#x4E00;&#x4E2A;&#x767E;&#x5206;&#x6BD4;&#xFF0C;&#x6240;&#x4EE5;&#x53D6;&#x503C;&#x5728;0.0-1.0&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;0.95&#x3002;</p>
+<p>globalMemStoreSize&#x8868;&#x793A;&#x5168;&#x5C40;memstore&#x5BB9;&#x91CF;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;hbase_heapsize(Regionserver &#x5360;&#x7528;&#x5806;&#x5185;&#x5B58;&#x5927;&#x5C0F;)*<code>hbase.regionserver.global.memstore.size</code></p>
+<p><code>hbase.regionserver.global.memstore.size</code>&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F;0.4&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x9608;&#x503C;&#xFF1A;</p>
+<p><code>regionserverHeapSize*hbase.regionserver.global.memstore.size*hbase.regionserver.global.memstore.size.lower.limit</code></p>
+<p>&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x5F3A;&#x5236;&#x7684;&#x5237;&#x5199;&#x3002;</p>
+<p>&#xFF08;3&#xFF09;&#x6570;&#x636E;&#x5237;&#x5199;&#x65F6;&#x673A;&#x4E09; &#xFF08;WAL&#x7684;&#x6570;&#x91CF;&#x5927;&#x4E8E;maxLogs&#xFF09;</p>
+<p>WAL&#x7684;&#x6570;&#x91CF;&#x5927;&#x4E8E;maxLogs&#x65F6;&#xFF0C;&#x4E5F;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x5237;&#x5199;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x963B;&#x585E;&#x4E8B;&#x4EF6;,&#x5012;&#x662F;&#x4F1A;&#x8B66;&#x544A;&#x4E00;&#x4E0B;&#x3002;&#x8BE5;&#x53C2;&#x6570;&#x5176;&#x5B9E;&#x65B0;&#x7248;&#x672C;&#x5DF2;&#x7ECF;&#x4E0D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x4E86;&#xFF0C;&#x6700;&#x5927;&#x5C31;&#x662F;32&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x66F4;&#x5C0F;&#xFF0C;&#x6839;&#x636E;<code>hbase.regionserver.global.memstore.size</code>&#x6765;&#x51B3;&#x5B9A;&#xFF1A;</p>
+<p><code>Math.max(32&#xFF0C;(regionserverHeapSize*memstoreSizeRatio*2/logRollSize))</code></p>
+<p>&#xFF08;4&#xFF09;&#x6570;&#x636E;&#x5237;&#x5199;&#x65F6;&#x673A;&#x56DB;(&#x81EA;&#x52A8;&#x5237;&#x5199;&#x95F4;&#x9694;)</p>
+<p><code>hbase.regionserver.optionalcacheflushinterval</code>&#xFF1A;&#x8868;&#x793A;memstore&#x7684;&#x5237;&#x5199;&#x95F4;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x662F;3600000&#xFF0C;&#x5373;1&#x4E2A;&#x5C0F;&#x65F6;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x5B9A;&#x4E3A;0&#xFF0C;&#x5219;&#x610F;&#x5473;&#x7740;&#x5173;&#x95ED;&#x81EA;&#x52A8;&#x5237;&#x5199;&#x3002;</p>
+<p>&#xFF08;5&#xFF09;&#x6570;&#x636E;&#x5237;&#x5199;&#x65F6;&#x673A;&#x4E94;&#xFF08;&#x624B;&#x52A8;&#x5237;&#x5199;&#xFF09;</p>
+<ul>
+<li><p>API:</p>
+</li>
+<li><ul>
+<li>flush(TableName tableName):&#x5BF9;&#x5355;&#x8868;&#x8FDB;&#x884C;&#x5237;&#x5199;&#x3002;</li>
+</ul>
+</li>
+<li><ul>
+<li>flushRegion(byte[] regionName):&#x5BF9;&#x5355;&#x4E2A;Region&#x8FDB;&#x884C;&#x5237;&#x5199;&#x3002;</li>
+</ul>
+</li>
+<li><p>HBase Shell:</p>
+</li>
+<li><ul>
+<li><code>flush &#x2018;tablename&#x2019;</code></li>
+</ul>
+</li>
+<li><ul>
+<li><code>flush &#x2018;regionname&#x2019;</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>3.Memstore&#x963B;&#x585E;&#x7684;&#x60C5;&#x51B5;</strong></p>
+<p>&#xFF08;1&#xFF09;memstore&#x963B;&#x585E;&#x60C5;&#x51B5;&#x4E00;&#xFF08;&#x6570;&#x636E;&#x589E;&#x957F;&#x901F;&#x5EA6;&#x592A;&#x5FEB;&#xFF09;</p>
+<p><code>hbase.hregion.memstore.flush.size</code> &#x9ED8;&#x8BA4;&#x9608;&#x503C;&#x662F;128MB</p>
+<p><code>hbase.hregion.memstore.block.multiplier</code>:&#x662F;&#x4E00;&#x4E2A;&#x500D;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;4&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x4E58;&#x79EF;&#x9ED8;&#x8BA4;&#x4E3A;512M&#xFF0C;&#x56E0;&#x4E3A;MemStore&#x7684;&#x5237;&#x5199;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x5B9A;&#x671F;&#x68C0;&#x67E5;&#x65F6;&#x95F4;&#xFF0C;&#x5728;&#x4E0B;&#x4E00;&#x6B21;&#x5237;&#x5199;&#x68C0;&#x67E5;&#x5230;&#x6765;&#x4E4B;&#x524D;&#x82E5;&#x8FBE;&#x5230;&#x4E86;&#x8FD9;&#x4E2A;&#x9608;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x7ACB;&#x5373;&#x89E6;&#x53D1;&#x5237;&#x5199;&#xFF0C;&#x540C;&#x65F6;&#x963B;&#x585E;&#x4F4F;&#x6240;&#x6709;&#x7684;&#x5199;&#x5165;&#x8BE5;Store&#x7684;&#x5199;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;memstore&#x963B;&#x585E;&#x60C5;&#x51B5;&#x4E8C;&#xFF08;global.memstore.size&#xFF09;</p>
+<p>&#x5F53;<code>hbase_heapsize</code>(Regionserver&#x5360;&#x7528;&#x5806;&#x5185;&#x5B58;&#x5927;&#x5C0F;)*<code>hbase.regionserver.global.memstore.size</code>&#x5927;&#x5C0F;&#x8FBE;&#x5230;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x963B;&#x585E;&#x6574;&#x4E2A;HBase&#x96C6;&#x7FA4;&#x7684;&#x5199;&#x5165;&#x3002;</p>
+<hr>
+<h3 id="&#x7B2C;&#x4E8C;&#x90E8;&#x5206;hbase&#x7684;&#x6027;&#x80FD;&#x4F18;&#x5316;">&#x7B2C;&#x4E8C;&#x90E8;&#x5206;.HBase&#x7684;&#x6027;&#x80FD;&#x4F18;&#x5316;</h3>
+<h5 id="hbase&#x6027;&#x80FD;&#x4F18;&#x5316;">HBase&#x6027;&#x80FD;&#x4F18;&#x5316;</h5>
+<h5 id="1&#x8BBE;&#x7F6E;hbase&#x9AD8;&#x53EF;&#x7528;">1.&#x8BBE;&#x7F6E;HBase&#x9AD8;&#x53EF;&#x7528;</h5>
+<p>&#x5728; HBase &#x4E2D; HMaster &#x8D1F;&#x8D23;&#x76D1;&#x63A7; HRegionServer &#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x5747;&#x8861; RegionServer &#x7684;&#x8D1F;&#x8F7D;&#xFF0C;&#x5982;&#x679C; HMaster &#x6302;&#x6389;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x6574;&#x4E2A; HBase &#x96C6;&#x7FA4;&#x5C06;&#x9677;&#x5165;&#x4E0D;&#x5065;&#x5EB7;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x4E14;&#x6B64;&#x65F6;&#x7684;&#x5DE5;&#x4F5C;&#x72B6;&#x6001;&#x5E76;&#x4E0D;&#x4F1A;&#x7EF4;&#x6301;&#x592A;&#x4E45;&#x3002;&#x6240;&#x4EE5; HBase &#x652F;&#x6301;&#x5BF9; HMaster &#x7684;&#x9AD8;&#x53EF;&#x7528;&#x914D;&#x7F6E;&#x3002;</p>
+<p>Hbase&#x672C;&#x8EAB;&#x5C31;&#x9ED8;&#x8BA4;&#x652F;&#x6301;&#x5BF9;HMater&#x7684;&#x9AD8;&#x53EF;&#x7528;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x624B;&#x52A8;&#x542F;&#x7528;&#x5907;&#x7528;master&#x3002;</p>
+<p><1>&#x5728;&#x9700;&#x8981;&#x542F;&#x52A8;master&#x7684;&#x8282;&#x70B9;&#x4E0A;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</1></p>
+<p>&#x200B;     [root@node02 hbase]# bin/hbase-daemon.sh start master</p>
+<p>&#x200B;     &#x8BBF;&#x95EE;&#x7F51;&#x5740;&#xFF1A;node01:16010      ;   node02:16010</p>
+<p>&#x200B;     &#x5373;&#x53EF;&#x67E5;&#x770B;&#x5230;node02&#x4E3A;&#x5907;&#x7528;master</p>
+<p><2>&#x4E0A;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x6BCF;&#x6B21;&#x90FD;&#x9700;&#x8981;&#x624B;&#x52A8;&#x542F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#xFF0C;&#x5373;&#x53EF;&#x5728;&#x542F;&#x52A8;HBase&#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#x5907;&#x4EFD;Master&#xFF1A;</2></p>
+<p>&#xFF08;1&#xFF09;&#x5173;&#x95ED; HBase &#x96C6;&#x7FA4;&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x5219;&#x8DF3;&#x8FC7;&#x6B64;&#x6B65;&#xFF09;</p>
+<p>&#x200B;     # bin/stop-hbase.sh</p>
+<p>&#xFF08;2&#xFF09;&#x5728; conf &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; backup-masters &#x6587;&#x4EF6;</p>
+<p>&#x200B;     #touch conf/backup-masters</p>
+<p>&#xFF08;3&#xFF09;&#x5728; backup-masters &#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&#x9AD8;&#x53EF;&#x7528; HMaster &#x8282;&#x70B9;</p>
+<p>&#x200B;     #echo node02 &gt; conf/backup-masters</p>
+<p>&#xFF08;4&#xFF09;&#x5C06;&#x6574;&#x4E2A; conf &#x76EE;&#x5F55;&#x590D;&#x5236;&#x5230;&#x5176;&#x4ED6;&#x8282;&#x70B9;</p>
+<p>&#xFF08;5&#xFF09;&#x6D4B;&#x8BD5;</p>
+<h5 id="2&#x9884;&#x5206;&#x533A;">2.&#x9884;&#x5206;&#x533A;</h5>
+<p><strong>&#x53C2;&#x8003;&#x535A;&#x5BA2;&#x5730;&#x5740;&#xFF1A;<a href="https://blog.51cto.com/12445535/2352410" target="_blank">https://blog.51cto.com/12445535/2352410</a></strong></p>
+<p>&#x200B;    &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5728;&#x521B;&#x5EFA;HBase&#x8868;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;region&#x5206;&#x533A;&#xFF0C;&#x5F53;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6240;&#x6709;&#x7684;HBase&#x5BA2;&#x6237;&#x7AEF;&#x90FD;&#x5411;&#x8FD9;&#x4E00;&#x4E2A;region&#x5199;&#x6570;&#x636E;&#xFF0C;&#x76F4;&#x5230;&#x8FD9;&#x4E2A;region&#x8DB3;&#x591F;&#x5927;&#x4E86;&#x624D;&#x8FDB;&#x884C;&#x5207;&#x5206;&#x3002;&#x4E00;&#x79CD;&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;&#x6279;&#x91CF;&#x5199;&#x5165;&#x901F;&#x5EA6;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x9884;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E9B;&#x7A7A;&#x7684;regions&#xFF0C;&#x8FD9;&#x6837;&#x5F53;&#x6570;&#x636E;&#x5199;&#x5165;HBase&#x65F6;&#xFF0C;&#x4F1A;&#x6309;&#x7167;region&#x5206;&#x533A;&#x60C5;&#x51B5;&#xFF0C;&#x5728;&#x96C6;&#x7FA4;&#x5185;&#x505A;&#x6570;&#x636E;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x3002;</p>
+<p>&#x200B;    &#x6BCF;&#x4E00;&#x4E2A; region &#x7EF4;&#x62A4;&#x7740; StartRow &#x4E0E; EndRow&#xFF0C;&#x5982;&#x679C;&#x52A0;&#x5165;&#x7684;&#x6570;&#x636E;&#x7B26;&#x5408;&#x67D0;&#x4E2A; Region &#x7EF4;&#x62A4;&#x7684;RowKey &#x8303;&#x56F4;&#xFF0C;&#x5219;&#x8BE5;&#x6570;&#x636E;&#x4EA4;&#x7ED9;&#x8FD9;&#x4E2A; Region &#x7EF4;&#x62A4;&#x3002;&#x90A3;&#x4E48;&#x4F9D;&#x7167;&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x636E;&#x6240;&#x8981;&#x6295;&#x653E;&#x7684;&#x5206;&#x533A;&#x63D0;&#x524D;&#x5927;&#x81F4;&#x7684;&#x89C4;&#x5212;&#x597D;&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8; HBase &#x6027;&#x80FD;&#x3002;</p>
+<p>&#x9884;&#x5206;&#x533A;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x9645;&#x96C6;&#x7FA4;&#x5927;&#x5C0F;&#x4EE5;&#x53CA;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x91CF;&#x7684;&#x5927;&#x5C0F;&#x76F8;&#x5173;&#x3002;&#x540C;&#x65F6;&#x9884;&#x5206;&#x533A;&#x7684;&#x5206;&#x533A;&#x952E;&#x7684;&#x9009;&#x62E9;&#x4E5F;&#x4E0E;rowkey&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x76F8;&#x5173;&#x3002;</p>
+<p>&#x200B;      <strong><em>&#x5E38;&#x7528;&#x7684;&#x9884;&#x5206;&#x533A;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</em></strong></p>
+<p>&#xFF08;1&#xFF09;Shell&#x547D;&#x4EE4;&#x884C;&#x6267;&#x884C;&#x9884;&#x5206;&#x533A;</p>
+<p>&#x200B;      &#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8FDB;&#x884C;&#x9884;&#x5206;&#x533A;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</p>
+<p>&#x200B;    a)  &#x76F4;&#x63A5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6307;&#x5B9A;&#x5206;&#x533A;&#x952E;</p>
+<p><code>hbase(main):001:0&gt; create &apos;testFenqu&apos;,&apos;info&apos;,SPLITS=&gt;[&apos;1000&apos;,&apos;2000&apos;,&apos;3000&apos;]</code></p>
+<p>&#x200B;      &#x5728;&#x9875;&#x9762;&#x4E2D;&#x67E5;&#x770B;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5206;&#x6210;&#x4E86;&#x56DB;&#x4E2A;&#x533A;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x533A;&#x7684;rowkey&#x8303;&#x56F4;&#x662F;[&#x7A7A;&#xFF0C;1000]&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;[1000,2000]&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x662F;[3000,4000]&#xFF0C;&#x7B2C;&#x56DB;&#x4E2A;&#x662F;[4000&#xFF0C;&#x7A7A;]</p>
+<p><img src="file:///C:/Users/lv/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" alt="img"></p>
+<p>&#x200B;            b)  &#x5C06;&#x5206;&#x533A;&#x952E;&#x5199;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x8FC7;&#x8BFB;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5206;&#x533A;</p>
+<p>&#x200B;             &#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF1A;</p>
+<p><img src="file:///C:/Users/lv/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img"></p>
+<p>&#x200B;            SHELL&#x547D;&#x4EE4;&#xFF1A;</p>
+<p>&#x200B;            <code>hbase(main):001:0&gt; create &apos;testFenqu2&apos;,&apos;info&apos;,SPLITS_FILE=&gt;&apos;splits.txt&apos;</code></p>
+<p>&#x200B;     &#x5728;&#x9875;&#x9762;&#x4E2D;&#x67E5;&#x770B;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5206;&#x6210;&#x4E86;&#x56DB;&#x4E2A;&#x533A;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x533A;&#x7684;rowkey&#x8303;&#x56F4;&#x662F; [&#x7A7A;&#xFF0C;aa]&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;[aa&#xFF0C;bb]&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x662F;[bb&#xFF0C;cc]&#xFF0C;&#x7B2C;&#x56DB;&#x4E2A;&#x662F;[cc&#xFF0C;dd]&#xFF0C;&#x7B2C;&#x4E94;&#x4E2A;&#x662F; [dd&#xFF0C;&#x7A7A;]&#x3002;</p>
+<p><img src="file:///C:/Users/lv/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img"></p>
+<p>&#xFF08;2&#xFF09;&#x8C03;&#x7528;API&#x5728;&#x7A0B;&#x5E8F;&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#x8FDB;&#x884C;&#x9884;&#x5206;&#x533A;</p>
+<p>&#x53C2;&#x8003;&#x535A;&#x5BA2;&#xFF1A;<a href="https://blog.csdn.net/qq_36864672/article/details/81019748" target="_blank">https://blog.csdn.net/qq_36864672/article/details/81019748</a></p>
+<h5 id="3&#x5408;&#x7406;&#x8BBE;&#x8BA1;rowkey">3.&#x5408;&#x7406;&#x8BBE;&#x8BA1;RowKey</h5>
+<p>HBase&#x4E2D;RowKey&#x7528;&#x6765;&#x68C0;&#x7D22;&#x8868;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>&#x901A;&#x8FC7;&#x5355;&#x4E2A;row key&#x8BBF;&#x95EE;&#xFF1A;&#x5373;&#x6309;&#x7167;&#x67D0;&#x4E2A;row key&#x952E;&#x503C;&#x8FDB;&#x884C;get&#x64CD;&#x4F5C;&#xFF1B;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;RowKey&#x7684;range&#x8FDB;&#x884C;scan&#xFF1A;&#x5373;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;startRowKey&#x548C;endRowKey&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x8FDB;&#x884C;&#x626B;&#x63CF;&#xFF1B;</p>
+</li>
+<li><p>&#x5168;&#x8868;&#x626B;&#x63CF;&#xFF1A;&#x5373;&#x76F4;&#x63A5;&#x626B;&#x63CF;&#x6574;&#x5F20;&#x8868;&#x4E2D;&#x6240;&#x6709;&#x884C;&#x8BB0;&#x5F55;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5728;HBase&#x4E2D;&#xFF0C;RowKey&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6700;&#x5927;&#x957F;&#x5EA6;64KB&#xFF0C;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#x4E00;&#x822C;&#x4E3A;10~100bytes&#xFF0C;&#x5B58;&#x4E3A;byte[]&#x5B57;&#x8282;&#x6570;&#x7EC4;&#xFF0C;&#x4E00;&#x822C;&#x8BBE;&#x8BA1;&#x6210;&#x5B9A;&#x957F;&#x7684;&#x3002;</p>
+<p>row key&#x662F;&#x6309;&#x7167;&#x5B57;&#x5178;&#x5E8F;&#x5B58;&#x50A8;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x8BBE;&#x8BA1;row key&#x65F6;&#xFF0C;&#x8981;&#x5145;&#x5206;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x6392;&#x5E8F;&#x7279;&#x70B9;&#xFF0C;&#x5C06;&#x7ECF;&#x5E38;&#x4E00;&#x8D77;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5230;&#x4E00;&#x5757;&#xFF0C;&#x5C06;&#x6700;&#x8FD1;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x8BBF;&#x95EE;&#x7684;&#x6570;&#x636E;&#x653E;&#x5728;&#x4E00;&#x5757;&#x3002;</p>
+<p>&#x4E00;&#x6761;&#x6570;&#x636E;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x5C31;&#x662F; RowKey&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x6761;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x4E8E;&#x54EA;&#x4E2A;&#x5206;&#x533A;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E; RowKey &#x5904;&#x4E8E;&#x54EA;&#x4E2A;&#x4E00;&#x4E2A;&#x9884;&#x5206;&#x533A;&#x7684;&#x533A;&#x95F4;&#x5185;&#xFF0C;&#x8BBE;&#x8BA1; RowKey &#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684; &#xFF0C;&#x5C31;&#x662F;&#x8BA9;&#x6570;&#x636E;&#x5747;&#x5300;&#x7684;&#x5206;&#x5E03;&#x4E8E;&#x6240;&#x6709;&#x7684;region &#x4E2D;&#xFF0C;&#x5728;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x4E0A;&#x9632;&#x6B62;&#x6570;&#x636E;&#x503E;&#x659C;&#x3002;</p>
+<p>&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x76EE;&#x7684;&#x76F8;&#x4E92;&#x77DB;&#x76FE;&#xFF0C;&#x56E0;&#x6B64;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x7684;&#x5E94;&#x7528;&#x9700;&#x6C42;&#x8FDB;&#x884C;&#x5408;&#x7406;&#x7684;rowkey&#x8BBE;&#x8BA1;&#xFF0C;&#x65E2;&#x8981;&#x8003;&#x8651;&#x5230;&#x6563;&#x5217;&#x6027;&#xFF0C;&#x53C8;&#x8981;&#x8003;&#x8651;&#x5230;&#x96C6;&#x4E2D;&#x6027;&#x3002;</p>
+<p>&#x5E38;&#x7528;&#x7684;&#x8BBE;&#x7F6E;RowKey&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>&#xFF08;1&#xFF09;&#x751F;&#x6210;&#x968F;&#x673A;&#x6570;&#x3001;hash&#x3001;&#x6563;&#x5217;&#x503C;</p>
+<p>&#xFF08;2&#xFF09;&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;</p>
+<p>&#xFF08;3&#xFF09;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;----&#x5C06;&#x65F6;&#x95F4;&#x6233;&#x4F5C;&#x4E3A;RowKey&#x7684;&#x4E00;&#x90E8;&#x5206;</p>
+<p>&#x4E00;&#x4E2A;&#x8BBE;&#x8BA1;rowkey&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p>&#x200B;    &#x5047;&#x8BBE;&#x7528;hbase&#x5B58;&#x50A8;&#x79FB;&#x52A8;&#x516C;&#x53F8;&#x5B58;&#x50A8;&#x7528;&#x6237;&#x7684;&#x901A;&#x8BDD;&#x8BB0;&#x5F55;&#xFF0C;&#x5206;&#x533A;&#x6570;300&#x4E2A;&#x3002;&#x5206;&#x533A;&#x952E;&#x4E3A;000 001 002 &#x2026; 299&#x3002; </p>
+<p>&#x200B;    &#x7528;&#x6237;rowkey&#x53EF;&#x4EE5;&#x8BBE;&#x8BA1;&#x4E3A;&#xFF1A;</p>
+<p>&#x200B;        &#x5206;&#x533A;&#x952E;&#x62FC;&#x63A5;&#x4E0A;&#x624B;&#x673A;&#x53F7;+&#x5E74;&#x4EFD;+&#x6708;&#x4EFD;+&#x5176;&#x4ED6;&#x4FE1;&#x606F;</p>
+<p>&#x200B;        &#x5982;&#xFF1A;xxx_13566668888_2019-07</p>
+<p>&#x200B;        &#x524D;&#x8FB9;&#x7684;xxx&#x5206;&#x533A;&#x952E;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#xFF0C;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;&#x53EF;&#x4EE5;&#x4E3A;&#xFF1A;</p>
+<p>&#x200B;        [&#xFF08;13566668888+201907&#xFF09;.hash]%300</p>
+<p>&#x200B;        &#x5F97;&#x51FA;&#x7684;rowKey&#x53EF;&#x80FD;&#x4E3A;&#xFF1A;</p>
+<p>&#x200B;        000_13566668888_2019-07-16 12&#xFF1A;12&#xFF1A;12</p>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x7684;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x624B;&#x673A;&#x53F7;&#x7684;&#x540C;&#x6708;&#x4EFD;&#x7684;&#x901A;&#x8BDD;&#x8BB0;&#x5F55;&#x5B58;&#x50A8;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5206;&#x533A;&#x5185;&#xFF0C;&#x4E0D;&#x540C;&#x624B;&#x673A;&#x53F7;&#x7684;&#x901A;&#x8BDD;&#x8BB0;&#x5F55;&#x901A;&#x8FC7;&#x53D6;&#x6A21;&#x8FD0;&#x7B97;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x533A;&#xFF0C;&#x65E2;&#x8003;&#x8651;&#x4E86;&#x6563;&#x5217;&#x6027;&#xFF0C;&#x53C8;&#x8003;&#x8651;&#x4E86;&#x96C6;&#x4E2D;&#x6027;&#x3002;</p>
+<h5 id="4&#x5185;&#x5B58;&#x4F18;&#x5316;">4.&#x5185;&#x5B58;&#x4F18;&#x5316;</h5>
+<p>HBase &#x64CD;&#x4F5C;&#x8FC7;&#x7A0B;&#x4E2D;&#x9700;&#x8981;&#x5927;&#x91CF;&#x7684;&#x5185;&#x5B58;&#x5F00;&#x9500;&#xFF0C;&#x6BD5;&#x7ADF; Table &#x662F;&#x53EF;&#x4EE5;&#x7F13;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x5206;&#x914D;&#x6574;&#x4E2A;&#x53EF;&#x7528;&#x5185;&#x5B58;&#x7684; 70%&#x7ED9; HBase &#x7684; Java &#x5806;&#x3002;&#x4F46;&#x662F;&#x4E0D;&#x5EFA;&#x8BAE;&#x5206;&#x914D;&#x975E;&#x5E38;&#x5927;&#x7684;&#x5806;&#x5185;&#x5B58;&#xFF0C;&#x56E0;&#x4E3A; GC &#x8FC7;&#x7A0B;&#x6301;&#x7EED;&#x592A;&#x4E45;&#x4F1A;&#x5BFC;&#x81F4; RegionServer &#x5904;&#x4E8E;&#x957F;&#x671F;&#x4E0D;&#x53EF;&#x7528;&#x72B6;&#x6001;&#xFF0C;&#x4E00;&#x822C; 16~48G &#x5185;&#x5B58;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x56E0;&#x4E3A;&#x6846;&#x67B6;&#x5360;&#x7528;&#x5185;&#x5B58;&#x8FC7;&#x9AD8;&#x5BFC;&#x81F4;&#x7CFB;&#x7EDF;&#x5185;&#x5B58;&#x4E0D;&#x8DB3;&#xFF0C;&#x6846;&#x67B6;&#x4E00;&#x6837;&#x4F1A;&#x88AB;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;&#x62D6;&#x6B7B;&#x3002;</p>
+<h5 id="5&#x57FA;&#x7840;&#x4F18;&#x5316;">5.&#x57FA;&#x7840;&#x4F18;&#x5316;</h5>
+<p>&#xFF08;1&#xFF09;&#x5141;&#x8BB8;&#x5728; HDFS &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x8FFD;&#x52A0;&#x5185;&#x5BB9;</p>
+<p>hdfs-site.xml&#x3001; hbase-site.xml</p>
+<p>&#x5C5E;&#x6027;&#xFF1A; dfs.support.append</p>
+<p>&#x89E3;&#x91CA;&#xFF1A;&#x5F00;&#x542F; HDFS &#x8FFD;&#x52A0;&#x540C;&#x6B65;&#xFF0C;&#x53EF;&#x4EE5;&#x4F18;&#x79C0;&#x7684;&#x914D;&#x5408; HBase &#x7684;&#x6570;&#x636E;&#x540C;&#x6B65;&#x548C;&#x6301;&#x4E45;&#x5316;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; true&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x4F18;&#x5316; DataNode &#x5141;&#x8BB8;&#x7684;&#x6700;&#x5927;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x6570;</p>
+<p>&#x200B;        hdfs-site.xml</p>
+<p>&#x200B;        &#x5C5E;&#x6027;&#xFF1A; dfs.datanode.max.transfer.threads</p>
+<p>&#x200B;        &#x89E3;&#x91CA;&#xFF1A; HBase &#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x64CD;&#x4F5C;&#x5927;&#x91CF;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6839;&#x636E;&#x96C6;&#x7FA4;&#x7684;&#x6570;&#x91CF;&#x548C;&#x89C4;&#x6A21;&#x4EE5;&#x53CA;&#x6570;&#x636E;&#x52A8;&#x4F5C;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A; 4096 &#x6216;&#x8005;&#x66F4;&#x9AD8;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A; 4096</p>
+<p>&#xFF08;3&#xFF09;&#x4F18;&#x5316;&#x5EF6;&#x8FDF;&#x9AD8;&#x7684;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;</p>
+<p>hdfs-site.xml</p>
+<p>&#x5C5E;&#x6027;&#xFF1A; dfs.image.transfer.timeout</p>
+<p>&#x89E3;&#x91CA;&#xFF1A;&#x5982;&#x679C;&#x5BF9;&#x4E8E;&#x67D0;&#x4E00;&#x6B21;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x6765;&#x8BB2;&#xFF0C;&#x5EF6;&#x8FDF;&#x975E;&#x5E38;&#x9AD8;&#xFF0C; socket &#x9700;&#x8981;&#x7B49;&#x5F85;&#x66F4;&#x957F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5EFA;&#x8BAE;&#x628A;&#x8BE5;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#x66F4;&#x5927;&#x7684;&#x503C;&#xFF08;&#x9ED8;&#x8BA4; 60000 &#x6BEB;&#x79D2;&#xFF09;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD; socket &#x4E0D;&#x4F1A;&#x88AB; timeout &#x6389;&#x3002;</p>
+<p>&#xFF08;4&#xFF09;&#x4F18;&#x5316;&#x6570;&#x636E;&#x7684;&#x5199;&#x5165;&#x6548;&#x7387;</p>
+<p>&#x200B;        mapred-site.xml</p>
+<p>&#x200B;        &#x5C5E;&#x6027;&#xFF1A;</p>
+<p>&#x200B;        mapreduce.map.output.compress</p>
+<p>&#x200B;        mapreduce.map.output.compress.codec</p>
+<p>&#x200B;        &#x89E3;&#x91CA;&#xFF1A;&#x5F00;&#x542F;&#x8FD9;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x6587;&#x4EF6;&#x7684;&#x5199;&#x5165;&#x6548;&#x7387;&#xFF0C;&#x51CF;&#x5C11;&#x5199;&#x5165;&#x65F6;&#x95F4;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x4FEE;&#x6539;&#x4E3A;true&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x4FEE;&#x6539;&#x4E3A;&#xFF1A;org.apache.hadoop.io.compress.GzipCodec &#x6216;&#x8005;&#x5176;&#x4ED6;&#x538B;&#x7F29;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#xFF08;5&#xFF09;&#x8BBE;&#x7F6E; RPC &#x76D1;&#x542C;&#x6570;&#x91CF;</p>
+<p>&#x200B;        hbase-site.xml</p>
+<p>&#x5C5E;&#x6027;&#xFF1A; Hbase.regionserver.handler.count</p>
+<p>&#x89E3;&#x91CA;&#xFF1A;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 30&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A; RPC &#x76D1;&#x542C;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;&#x8F83;&#x591A;&#x65F6;&#xFF0C;&#x589E;&#x52A0;&#x6B64;&#x503C;</p>
+<p>&#xFF08;6&#xFF09;&#x4F18;&#x5316; HStore &#x6587;&#x4EF6;&#x5927;&#x5C0F;</p>
+<p>&#x200B;        hbase-site.xml</p>
+<p>&#x200B;        &#x5C5E;&#x6027;&#xFF1A; hbase.hregion.max.filesize</p>
+<p>&#x200B;        &#x89E3;&#x91CA;&#xFF1A;&#x9ED8;&#x8BA4;&#x503C; 10737418240&#xFF08;10GB&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x8FD0;&#x884C; HBase &#x7684; MR &#x4EFB;&#x52A1;&#xFF0C;&#x53EF;&#x4EE5;&#x51CF;&#x5C0F;&#x6B64;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A; region &#x5BF9;&#x5E94;&#x4E00;&#x4E2A; map &#x4EFB;&#x52A1;&#xFF0C;&#x5982;&#x679C;&#x5355;&#x4E2A; region &#x8FC7;&#x5927;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4; map &#x4EFB;&#x52A1;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#x3002;&#x8BE5;&#x503C;&#x7684;&#x610F;&#x601D;&#x5C31;&#x662F;&#xFF0C;&#x5982;&#x679C; HFile &#x7684;&#x5927;&#x5C0F;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x6570;&#x503C;&#xFF0C;&#x5219;&#x8FD9;&#x4E2A; region &#x4F1A;&#x88AB;&#x5207;&#x5206;&#x4E3A;&#x4E24;&#x4E2A; Hfile&#x3002;</p>
+<p>&#xFF08;7&#xFF09;&#x4F18;&#x5316; HBase &#x5BA2;&#x6237;&#x7AEF;&#x7F13;&#x5B58;</p>
+<p>&#x200B;      hbase-site.xml</p>
+<p>&#x200B;        &#x5C5E;&#x6027;&#xFF1A; hbase.client.write.buffer</p>
+<p>&#x200B;        &#x89E3;&#x91CA;&#xFF1A;&#x7528;&#x4E8E;&#x6307;&#x5B9A; Hbase &#x5BA2;&#x6237;&#x7AEF;&#x7F13;&#x5B58;&#xFF0C;&#x589E;&#x5927;&#x8BE5;&#x503C;&#x53EF;&#x4EE5;&#x51CF;&#x5C11; RPC &#x8C03;&#x7528;&#x6B21;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x6D88;&#x8017;&#x66F4;&#x591A;&#x5185;&#x5B58;&#xFF0C;&#x53CD;&#x4E4B;&#x5219;&#x53CD;&#x4E4B;&#x3002;&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BBE;&#x5B9A;&#x4E00;&#x5B9A;&#x7684;&#x7F13;&#x5B58;&#x5927;&#x5C0F;&#xFF0C;&#x4EE5;&#x8FBE;&#x5230;&#x51CF;&#x5C11; RPC &#x6B21;&#x6570;&#x7684;&#x76EE;&#x7684;&#x3002;</p>
+<p>&#xFF08;8&#xFF09;&#x6307;&#x5B9A; scan.next &#x626B;&#x63CF; HBase &#x6240;&#x83B7;&#x53D6;&#x7684;&#x884C;&#x6570;</p>
+<p>&#x200B;      hbase-site.xml</p>
+<p>&#x200B;        &#x5C5E;&#x6027;&#xFF1A; hbase.client.scanner.caching</p>
+<p>&#x200B;        &#x89E3;&#x91CA;&#xFF1A;&#x7528;&#x4E8E;&#x6307;&#x5B9A; scan.next &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x7684;&#x9ED8;&#x8BA4;&#x884C;&#x6570;&#xFF0C;&#x503C;&#x8D8A;&#x5927;&#xFF0C;&#x6D88;&#x8017;&#x5185;&#x5B58;&#x8D8A;&#x5927;&#x3002;</p>
+<p>&#xFF08;9&#xFF09;flush&#x3001; compact&#x3001; split &#x673A;&#x5236;</p>
+<p>&#x200B;      &#x5F53; MemStore &#x8FBE;&#x5230;&#x9608;&#x503C;&#xFF0C;&#x5C06; Memstore &#x4E2D;&#x7684;&#x6570;&#x636E; Flush &#x8FDB; Storefile&#xFF1B; compact &#x673A;&#x5236;&#x5219;&#x662F;&#x628A; flush&#x51FA;&#x6765;&#x7684;&#x5C0F;&#x6587;&#x4EF6;&#x5408;&#x5E76;&#x6210;&#x5927;&#x7684; Storefile &#x6587;&#x4EF6;&#x3002; split &#x5219;&#x662F;&#x5F53; Region &#x8FBE;&#x5230;&#x9608;&#x503C;&#xFF0C;&#x4F1A;&#x628A;&#x8FC7;&#x5927;&#x7684; Region&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#x3002;</p>
+<p>&#x200B;        &#x5EFA;&#x8BAE;&#xFF1A;&#x5173;&#x95ED;&#x7EBF;&#x4E0A;&#x81EA;&#x52A8;split&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x8FD9;&#x4E00;&#x65B9;&#x9762;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x2019;&#x62C6;&#x5206;&#x5408;&#x5E76;&#x98CE;&#x66B4;&#x2019;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x7684; region &#x5927;&#x5C0F;&#x4EE5;&#x6052;&#x5B9A;&#x7684;&#x901F;&#x5EA6;&#x4FDD;&#x6301;&#x589E;&#x957F;&#x65F6;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x67D0;&#x4E9B;&#x5DE7;&#x5408;&#x7684;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x5927;&#x91CF; region &#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x53D1;&#x751F;split&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4F1A;&#x91CD;&#x5199;&#x62C6;&#x5206;&#x4E4B;&#x540E;&#x7684; region &#xFF0C;&#x8FD9;&#x5C06;&#x5F15;&#x8D77;&#x78C1;&#x76D8;IO&#x4E0A;&#x5347;&#x3002;&#x624B;&#x52A8;&#x62C6;&#x5206;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x7684;region&#x4E0A;&#x4EA4;&#x4E92;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5C3D;&#x53EF;&#x80FD;&#x5206;&#x6563;IO&#x538B;&#x529B;&#xFF0C;&#x907F;&#x514D;&#x98CE;&#x66B4;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x624B;&#x52A8;&#x62C6;&#x5206;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x54EA;&#x4E9B; region &#x53EF;&#x7528;&#x3002;&#x8BD5;&#x60F3;&#xFF0C;&#x67D0;&#x5929;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x78B0;&#x5230;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x60F3;&#x5BF9;&#x95EE;&#x9898;&#x73B0;&#x573A;&#x8FDB;&#x884C;&#x8DDF;&#x8E2A;&#xFF0C;&#x8F6C;&#x773C;&#x6CA1;&#x770B;&#xFF0C;&#x53D1;&#x73B0; region &#x5DF2;&#x7ECF;&#x88AB;&#x62C6;&#x5206;&#x4E86;&#xFF0C;&#x73B0;&#x573A;&#x88AB;&#x6BC1;&#x4E86;&#xFF0C;&#x90A3;&#x79CD;&#x611F;&#x89C9;&#x5C82;&#x4E0D;&#x662F;&#x5F88;&#x4E0D;&#x597D;&#x3002;&#x624B;&#x52A8;&#x62C6;&#x5206;&#x5C31;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x5947;&#x8469;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x5B9E;&#x8DF5;&#x65B9;&#x6CD5;&#xFF1A;&#x53EF;&#x4EE5;&#x5C06;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x2018;hbase.hregion.max.filesize&#x2019;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E00;&#x4E2A;&#x8F83;&#x5927;&#x7684;&#x503C;&#xFF08;&#x6BD4;&#x5982;200G&#xFF09;, &#x8FD9;&#x6837;&#x7CFB;&#x7EDF;&#x5C31;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x81EA;&#x52A8;split&#x64CD;&#x4F5C;&#x3002;</p>
+<hr>
+<h3 id="&#x7B2C;&#x4E09;&#x90E8;&#x5206;hbase&#x7684;shell&#x64CD;&#x4F5C;">&#x7B2C;&#x4E09;&#x90E8;&#x5206;.HBase&#x7684;Shell&#x64CD;&#x4F5C;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">hbase</th>
+<th style="text-align:center">shell&#x547D;&#x4EE4;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">create</td>
+<td style="text-align:center">&#x521B;&#x5EFA;&#x8868;</td>
+<td style="text-align:center">&lt; create &#x2018;&#x8868;&#x540D;&#x2019;, &#x2018;&#x5217;&#x65CF;&#x540D;&#x2019;, &#x2018;&#x5217;&#x65CF;&#x540D;2&#x2019;,&#x2018;&#x5217;&#x65CF;&#x540D;N&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">list</td>
+<td style="text-align:center">&#x67E5;&#x770B;&#x6240;&#x6709;&#x8868;</td>
+<td style="text-align:center">&lt; list all &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">describe</td>
+<td style="text-align:center">&#x663E;&#x793A;&#x8868;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</td>
+<td style="text-align:center">&lt; describe &#x2018;&#x8868;&#x540D;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">exists</td>
+<td style="text-align:center">&#x5224;&#x65AD;&#x8868;&#x662F;&#x5426;&#x5B58;&#x5728;</td>
+<td style="text-align:center">&lt; exists &#x2018;&#x8868;&#x540D;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">enable</td>
+<td style="text-align:center">&#x4F7F;&#x8868;&#x6709;&#x6548;</td>
+<td style="text-align:center">&lt; enable &#x2018;&#x8868;&#x540D;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">disable</td>
+<td style="text-align:center">&#x4F7F;&#x8868;&#x65E0;&#x6548;</td>
+<td style="text-align:center">&lt; disable &#x2018;&#x8868;&#x540D;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">is_enabled</td>
+<td style="text-align:center">&#x5224;&#x65AD;&#x662F;&#x5426;&#x542F;&#x52A8;&#x8868;</td>
+<td style="text-align:center">&lt; is_enabled &#x2018;&#x8868;&#x540D;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">is_disabled</td>
+<td style="text-align:center">&#x5224;&#x65AD;&#x662F;&#x5426;&#x7981;&#x7528;&#x8868;</td>
+<td style="text-align:center">&lt; is_disabled &#x2018;&#x8868;&#x540D;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">count</td>
+<td style="text-align:center">&#x7EDF;&#x8BA1;&#x8868;&#x4E2D;&#x884C;&#x7684;&#x6570;&#x91CF;</td>
+<td style="text-align:center">&lt; count &#x2018;&#x8868;&#x540D;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">put</td>
+<td style="text-align:center">&#x6DFB;&#x52A0;&#x8BB0;&#x5F55;</td>
+<td style="text-align:center">&lt; put &#x2018;&#x8868;&#x540D;&#x2019;, &#x2018;row key&#x2019;, &#x2018;&#x5217;&#x65CF;1 : &#x5217;&#x2019;, &#x2018;&#x503C;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">get</td>
+<td style="text-align:center">&#x83B7;&#x53D6;&#x8BB0;&#x5F55;(row key&#x4E0B;&#x6240;&#x6709;)</td>
+<td style="text-align:center">&lt; get &#x2018;&#x8868;&#x540D;&#x2019;, &#x2018;row key&#x2019;&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">get</td>
+<td style="text-align:center">&#x83B7;&#x53D6;&#x8BB0;&#x5F55;(&#x67D0;&#x4E2A;&#x5217;&#x65CF;)</td>
+<td style="text-align:center">&lt; get &#x2018;&#x8868;&#x540D;&#x2019;, &#x2018;row key&#x2019;, &#x2018;&#x5217;&#x65CF;&#x2019;&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">get</td>
+<td style="text-align:center">&#x83B7;&#x53D6;&#x8BB0;&#x5F55;(&#x67D0;&#x4E2A;&#x5217;)</td>
+<td style="text-align:center">&lt; get &#x2018;&#x8868;&#x540D;&#x2019;,&#x2018;row key&#x2019;,&#x2018;&#x5217;&#x65CF;:&#x5217;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">delete</td>
+<td style="text-align:center">&#x5220;&#x9664;&#x8BB0;&#x5F55;</td>
+<td style="text-align:center">&lt; delete &#x2018;&#x8868;&#x540D;&#x2019;, &#x2018;row key&#x2019;, &#x2018;&#x5217;&#x65CF;:&#x5217;&#x2019; &gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">deleteall</td>
+<td style="text-align:center">&#x5220;&#x9664;&#x4E00;&#x884C;</td>
+<td style="text-align:center">&lt; deleteall &#x2018;&#x8868;&#x540D;&#x2019;,&#x2018;row key&#x2019;&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">drop</td>
+<td style="text-align:center">&#x5220;&#x9664;&#x8868;</td>
+<td style="text-align:center"><disable ‘表名’=""> &lt; drop &#x2018;&#x8868;&#x540D;&#x2019;&gt;</disable></td>
+</tr>
+<tr>
+<td style="text-align:center">alter</td>
+<td style="text-align:center">&#x4FEE;&#x6539;&#x5217;&#x65CF;&#xFF08;column family&#xFF09;    </td>
+</tr>
+<tr>
+<td style="text-align:center">incr</td>
+<td style="text-align:center">&#x589E;&#x52A0;&#x6307;&#x5B9A;&#x8868;&#xFF0C;&#x884C;&#x6216;&#x5217;&#x7684;&#x503C;    </td>
+</tr>
+<tr>
+<td style="text-align:center">truncate</td>
+<td style="text-align:center">&#x6E05;&#x7A7A;&#x8868;</td>
+<td style="text-align:center">&#x903B;&#x8F91;&#x4E3A;&#x5148;&#x5220;&#x9664;&#x540E;&#x521B;&#x5EFA; <truncate ‘表明’=""></truncate></td>
+</tr>
+<tr>
+<td style="text-align:center">scan</td>
+<td style="text-align:center">&#x901A;&#x8FC7;&#x5BF9;&#x8868;&#x7684;&#x626B;&#x63CF;&#x6765;&#x83B7;&#x53D6;&#x5BF9;&#x7528;&#x7684;&#x503C;</td>
+<td style="text-align:center"><scan ‘表名’=""></scan></td>
+</tr>
+<tr>
+<td style="text-align:center">tools</td>
+<td style="text-align:center">&#x5217;&#x51FA;hbase&#x6240;&#x652F;&#x6301;&#x7684;&#x5DE5;&#x5177;    </td>
+</tr>
+<tr>
+<td style="text-align:center">status</td>
+<td style="text-align:center">&#x8FD4;&#x56DE;hbase&#x96C6;&#x7FA4;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;    </td>
+</tr>
+<tr>
+<td style="text-align:center">version</td>
+<td style="text-align:center">&#x8FD4;&#x56DE;hbase&#x7248;&#x672C;&#x4FE1;&#x606F;    </td>
+</tr>
+<tr>
+<td style="text-align:center">exit</td>
+<td style="text-align:center">&#x9000;&#x51FA;hbase shell    </td>
+</tr>
+<tr>
+<td style="text-align:center">shutdown</td>
+<td style="text-align:center">&#x5173;&#x95ED;hbase&#x96C6;&#x7FA4;(&#x4E0E;exit&#x4E0D;&#x540C;)</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spark.html" class="navigation navigation-prev " aria-label="Previous page: spark学习笔记">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hdfs.html" class="navigation navigation-next " aria-label="Next page: hdfs学习笔记">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"hbase学习笔记","level":"1.2.5","depth":2,"next":{"title":"hdfs学习笔记","level":"1.2.6","depth":2,"path":"预备知识/hdfs.md","ref":"预备知识/hdfs.md","articles":[]},"previous":{"title":"spark学习笔记","level":"1.2.4","depth":2,"path":"预备知识/spark.md","ref":"预备知识/spark.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"预备知识/hbase.md","mtime":"2019-11-06T02:22:28.514Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-06T03:20:57.555Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

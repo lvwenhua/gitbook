@@ -1,0 +1,541 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>pyspark实例练习 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="scala_spark.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../预备知识/">
+            
+                <a href="../预备知识/">
+            
+                    
+                    学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../预备知识/git.html">
+            
+                <a href="../预备知识/git.html">
+            
+                    
+                    git笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../预备知识/docker.html">
+            
+                <a href="../预备知识/docker.html">
+            
+                    
+                    docker笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../预备知识/flume.html">
+            
+                <a href="../预备知识/flume.html">
+            
+                    
+                    flume笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../预备知识/spark.html">
+            
+                <a href="../预备知识/spark.html">
+            
+                    
+                    spark学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../预备知识/hbase.html">
+            
+                <a href="../预备知识/hbase.html">
+            
+                    
+                    hbase学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../预备知识/hdfs.html">
+            
+                <a href="../预备知识/hdfs.html">
+            
+                    
+                    hdfs学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../预备知识/ambari.html">
+            
+                <a href="../预备知识/ambari.html">
+            
+                    
+                    Ambari学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../预备知识/pyspark.html">
+            
+                <a href="../预备知识/pyspark.html">
+            
+                    
+                    pyspark学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../预备知识/kafka.html">
+            
+                <a href="../预备知识/kafka.html">
+            
+                    
+                    kafka学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    代码练习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="pyspark_demo.html">
+            
+                <a href="pyspark_demo.html">
+            
+                    
+                    pyspark实例练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="scala_spark.html">
+            
+                <a href="scala_spark.html">
+            
+                    
+                    scala-spark实例练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >pyspark实例练习</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="pyspark&#x5B9E;&#x4F8B;&#x7EC3;&#x4E60;">pyspark&#x5B9E;&#x4F8B;&#x7EC3;&#x4E60;</h1>
+<h4 id="1pyspark&#x8FC7;&#x6EE4;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x6279;&#x6570;&#x636E;--&#x5199;sql&#x8BED;&#x53E5;">1.pyspark&#x8FC7;&#x6EE4;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x6279;&#x6570;&#x636E;--&#x5199;sql&#x8BED;&#x53E5;</h4>
+<pre><code>from pyspark import SparkConf,SparkContext
+from pyspark.sql import SparkSession
+
+
+spark=SparkSession.builder.master(&quot;local[2]&quot;).appName(&quot;testSQl&quot;).getOrCreate()
+#&#x8BFB;&#x53D6;&#x6587;&#x4EF6;
+lines=spark.read.json(&quot;hdfs://node01:8020/lvwenhua/input/part-r-00004.dms&quot;)
+#&#x8FC7;&#x6EE4;&#x524D;&#x7684;&#x6761;&#x76EE;&#x6570;
+count1=lines.count()
+print count1
+##&#x5199;sql&#x8FC7;&#x6EE4;
+lines.createOrReplaceTempView(&quot;filter&quot;)
+sqltest=&quot;select * from filter where  rule_100_id!=&apos;20190219000100050131&apos; or rule_100_id is null&quot;
+#import spark.implicits._
+result=spark.sql(sqlQuery=sqltest).toJSON()
+print(result.count())
+result.take(4)
+
+result.saveAsTextFile(&quot;hdfs://node01:8020/lvwenhua/outputS1&quot;)
+print &quot;&#x5B58;&#x50A8;&#x5B8C;&#x6BD5;&#xFF01;&quot;
+spark.stop()
+</code></pre><h4 id="2pyspark&#x8FC7;&#x6EE4;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x6279;&#x6570;&#x636E;--&#x901A;&#x8FC7;filter&#x65B9;&#x6CD5;">2.pyspark&#x8FC7;&#x6EE4;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x6279;&#x6570;&#x636E;--&#x901A;&#x8FC7;filter&#x65B9;&#x6CD5;</h4>
+<pre><code>from pyspark import SparkConf,SparkContext
+from pyspark.sql import SparkSession
+
+
+spark=SparkSession.builder.master(&quot;local[2]&quot;).appName(&quot;testSQl&quot;).getOrCreate()
+#&#x8BFB;&#x53D6;&#x6587;&#x4EF6;
+lines=spark.read.json(&quot;hdfs://node01:8020/lvwenhua/input/part-r-00004.dms&quot;)
+#&#x8FC7;&#x6EE4;&#x524D;&#x7684;&#x6761;&#x76EE;&#x6570;
+count1=lines.count()
+print count1
+##&#x4E0D;&#x5199;sql
+lines.createOrReplaceTempView(&quot;filter&quot;)
+
+result=lines.filter(&quot;rule_100_id!=&apos;20190219000100050131&apos; or rule_100_id is null&quot;).toJSON()
+
+print(result.count())
+result.take(4)
+
+result.saveAsTextFile(&quot;hdfs://node01:8020/lvwenhua/outputS4&quot;)
+print &quot;&#x5B58;&#x50A8;&#x5B8C;&#x6BD5;&#xFF01;&quot;
+spark.stop()
+</code></pre><h4 id="3pyspark-&#x8BFB;&#x53D6;hdfs&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4E00;&#x5B9A;&#x64CD;&#x4F5C;&#x5E76;&#x5B58;&#x50A8;&#x5230;kafka&#x4E2D;">3.pyspark &#x8BFB;&#x53D6;Hdfs&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4E00;&#x5B9A;&#x64CD;&#x4F5C;&#x5E76;&#x5B58;&#x50A8;&#x5230;kafka&#x4E2D;</h4>
+<pre><code># -*- coding: utf-8 -*-
+
+import findspark
+findspark.init(spark_home=&quot;/usr/hdp/current/spark2-client/&quot;,python_path=&quot;/root/anaconda2/bin/python&quot;)
+from functools import reduce 
+from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession
+from kafka import KafkaProducer
+import json
+from pyspark.sql.types import Row
+from kafka import KafkaProducer,SimpleProducer,SimpleClient
+
+from pyspark.streaming import StreamingContext
+from pyspark.streaming.kafka import KafkaUtils,TopicAndPartition
+
+def get_spark(master=&quot;yarn&quot;, memory=&quot;1g&quot;, local_dir=&quot;/tmp&quot;,app_name=&quot;preporcess&quot;,queue=&quot;default&quot;,engine_id=&quot;asdf&quot;):
+
+    msg = &quot;Please Note..... \n      spark up.&quot;
+    &apos;&apos;&apos;
+    &#x521B;&#x5EFA;spark content
+
+    &#x8F93;&#x5165;:
+        master: spark &#x8FD0;&#x884C;&#x6A21;&#x5F0F;
+        memory: spark &#x6267;&#x884C;&#x8282;&#x70B9;&#x7684;&#x5185;&#x5B58;
+        local_dir: spark&#x7684;&#x672C;&#x5730;&#x76EE;&#x5F55;&#x4F4D;&#x7F6E; &#x9700;&#x8981;&#x5BB9;&#x91CF;&#x8F83;&#x5927;
+    &#x8F93;&#x51FA;:
+        spark content
+    &apos;&apos;&apos;
+    spark = SparkSession.builder.appName(app_name).master(&quot;yarn&quot;).config(
+        &quot;spark.shuffle.service.enabled&quot;, True
+    ).config(
+        &quot;spark.executor.instances&quot;, 2
+    ).config(
+        &quot;spark.executor.cores&quot;, 2
+    ).config( &quot;spark.driver.memory&quot;, &quot;4G&quot;
+    ).config(
+        &quot;spark.executor.memory&quot;, &quot;3G&quot;
+    ).config(
+        &quot;spark.shuffle.memoryFraction&quot;, &quot;0.6&quot;
+    ).config(
+        &quot;spark.default.parallelism&quot;, 400
+    ).config(
+        &quot;spark.local.dir&quot;, &quot;/tmp&quot;
+    ).config(
+        &quot;spark.driver.maxResultSize&quot;, &quot;5G&quot;
+    ).config(
+        &quot;spark.yarn.queue&quot;, &quot;http_project&quot;
+    ).config(
+        &quot;spark.streaming.kafka.maxRatePerPartition&quot;,100
+    ).getOrCreate()
+
+    print(&quot;create spark session&quot;, spark.sparkContext.master)
+    print(msg)
+    return spark  
+
+def send_kafka(rows):
+    client = SimpleClient(&apos;hdp2.buptnsrc.com:6667,hdp4.buptnsrc.com:6667,hdp5.buptnsrc.com:6667&apos;)
+    producer = SimpleProducer(client,async_send=True,batch_send_every_n=400,batch_send_every_t=10)
+    for row in rows:
+        producer.send_messages(&quot;testkafka&quot;,json.dumps(row.asDict()))
+    producer.stop()
+
+if __name__ == &apos;__main__&apos;:
+    print(&quot;111&quot;)
+    #spark = SparkSession.builder.getOrCreate()
+    src_path  = &quot;/http-data/copy_file/2019-05-02/00-00-00/10.3.200.155/2019-05-02-00-05_INFO.txt&quot;
+    task_id  = &quot;kafka-test&quot;
+    yesterday  = &quot;2019-05-02-14-15-16&quot;
+    upload_host  = &quot;10.3.200.155&quot;
+    spark = get_spark(master=&quot;yarn&quot;,app_name=&quot;kafka-test&quot;,queue=&quot;default&quot;)
+    df=spark.read.option(&quot;mode&quot;,&quot;DROPMALFORMED&quot;).json(src_path)
+
+    counts=df.count()
+    print(&quot;lwh&quot;+str(counts))
+
+    ##&#x5C06;&#x6570;&#x636E;&#x5B58;&#x5165;kafka
+
+    df.foreachPartition(send_kafka)
+    print(&quot;&#x5B8C;&#x6210;!!!&quot;)
+
+    spark.stop()
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 代码练习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="scala_spark.html" class="navigation navigation-next " aria-label="Next page: scala-spark实例练习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"pyspark实例练习","level":"1.3.1","depth":2,"next":{"title":"scala-spark实例练习","level":"1.3.2","depth":2,"path":"代码练习/scala_spark.md","ref":"代码练习/scala_spark.md","articles":[]},"previous":{"title":"代码练习","level":"1.3","depth":1,"path":"代码练习/README.md","ref":"代码练习/README.md","articles":[{"title":"pyspark实例练习","level":"1.3.1","depth":2,"path":"代码练习/pyspark_demo.md","ref":"代码练习/pyspark_demo.md","articles":[]},{"title":"scala-spark实例练习","level":"1.3.2","depth":2,"path":"代码练习/scala_spark.md","ref":"代码练习/scala_spark.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"代码练习/pyspark_demo.md","mtime":"2019-11-06T03:18:37.118Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-06T03:20:57.555Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

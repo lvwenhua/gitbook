@@ -1,0 +1,460 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>scala-spark实例练习 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="pyspark_demo.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../预备知识/">
+            
+                <a href="../预备知识/">
+            
+                    
+                    学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../预备知识/git.html">
+            
+                <a href="../预备知识/git.html">
+            
+                    
+                    git笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../预备知识/docker.html">
+            
+                <a href="../预备知识/docker.html">
+            
+                    
+                    docker笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../预备知识/flume.html">
+            
+                <a href="../预备知识/flume.html">
+            
+                    
+                    flume笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../预备知识/spark.html">
+            
+                <a href="../预备知识/spark.html">
+            
+                    
+                    spark学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../预备知识/hbase.html">
+            
+                <a href="../预备知识/hbase.html">
+            
+                    
+                    hbase学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../预备知识/hdfs.html">
+            
+                <a href="../预备知识/hdfs.html">
+            
+                    
+                    hdfs学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../预备知识/ambari.html">
+            
+                <a href="../预备知识/ambari.html">
+            
+                    
+                    Ambari学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../预备知识/pyspark.html">
+            
+                <a href="../预备知识/pyspark.html">
+            
+                    
+                    pyspark学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../预备知识/kafka.html">
+            
+                <a href="../预备知识/kafka.html">
+            
+                    
+                    kafka学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    代码练习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="pyspark_demo.html">
+            
+                <a href="pyspark_demo.html">
+            
+                    
+                    pyspark实例练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="scala_spark.html">
+            
+                <a href="scala_spark.html">
+            
+                    
+                    scala-spark实例练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >scala-spark实例练习</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="scala-spark&#x5B9E;&#x4F8B;&#x7EC3;&#x4E60;">scala-spark&#x5B9E;&#x4F8B;&#x7EC3;&#x4E60;</h1>
+<h4 id="1sparkstreamingkafka&#x6D4B;&#x8BD5;&#x6D88;&#x8D39;">1.sparkstreaming+kafka&#x6D4B;&#x8BD5;&#x6D88;&#x8D39;</h4>
+<pre><code>package demo
+
+import org.apache.spark.streaming.dstream.{DStream, ReceiverInputDStream}
+import org.apache.spark.streaming.kafka.KafkaUtils
+import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.apache.spark.{SparkConf, SparkContext}
+
+object sparkstreamtest {
+  def main(args: Array[String]): Unit = {
+    val conf: SparkConf = new SparkConf().setMaster(&quot;local[2]&quot;).setAppName(&quot;testStreaming&quot;)
+    val sc = new SparkContext(conf)
+    val ssc = new StreamingContext(sc,Seconds(5))
+
+    val lines: ReceiverInputDStream[(String, String)] = KafkaUtils.createStream(ssc,&quot;hdp4.buptnsrc.com:2181&quot;,&quot;kafka_Test_lwh&quot;,Map(&quot;test_kafka_flume_hbase_lwh&quot;-&gt;2))
+//    val lines: DStream[String] = ssc.textFileStream(&quot;file:\\D:\\bigdata-project\\spark1\\input2&quot;)
+    val words = lines.flatMap(_._2.split(&quot; &quot;))
+    val wordCounts: DStream[(String, Int)] = words.map(x =&gt; (x, 1)).reduceByKey(_ + _)
+    //println(&quot;lvwenhua&quot;+lines.count())
+    wordCounts.print()
+    ssc.start()
+    ssc.awaitTermination()
+  }
+}
+</code></pre><h4 id="2-sparksql&#x8FC7;&#x6EE4;&#x6307;&#x5B9A;&#x6570;&#x636E;">2. sparksql&#x8FC7;&#x6EE4;&#x6307;&#x5B9A;&#x6570;&#x636E;</h4>
+<pre><code>import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
+
+object sparkSqlFilter {
+  def main(args: Array[String]): Unit = {
+
+    val spark: SparkSession = SparkSession.builder().master(&quot;local[2]&quot;).appName(&quot;testSQl&quot;).getOrCreate()
+    val df: DataFrame = spark.read.json(&quot;file:\\D:\\bigdata-project\\spark1\\input\\part-r-00004.dms&quot;)
+    val nums: Long = df.count()
+    df.createOrReplaceTempView(&quot;filter&quot;)
+    val sqltest=&quot;select * from filter where  rule_100_id!=&apos;20190219000100050131&apos; or rule_100_id is null&quot;
+    import spark.implicits._
+
+    //val resultframe: DataFrame = spark.sql(sqltest)
+    //resultframe.rdd.foreach(println(_))
+
+    val result: RDD[String] = spark.sql(sqltest).toJSON.rdd
+    println(result.count())
+    println(nums)
+    //result.saveAsTextFile(&quot;hdfs://node01:8020/lvwenhua/output-sparksql_1/&quot;)
+   // println(nums2)
+    //df.printSchema()
+
+    spark.stop()
+  }
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pyspark_demo.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: pyspark实例练习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"scala-spark实例练习","level":"1.3.2","depth":2,"previous":{"title":"pyspark实例练习","level":"1.3.1","depth":2,"path":"代码练习/pyspark_demo.md","ref":"代码练习/pyspark_demo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"代码练习/scala_spark.md","mtime":"2019-11-06T03:04:41.977Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-06T03:20:57.555Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
